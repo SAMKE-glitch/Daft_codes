@@ -9,3 +9,16 @@ Example:
     Because nums[0] + nums[1] = 2 + 7 = 9,
     return [0, 1].
 """
+from typing import List
+
+class Solution():
+    def add_Two_sum(self, nums: List[int], target: int) -> List[int]:
+        #brute force solution or using 2 for loops
+        for i in range(len(nums)-1):
+            for j in range(i+1, len(nums)):
+                if nums[i] + nums[j] == target:
+                    return([i, j])
+sam = Solution()
+result = sam.add_Two_sum([2, 7, 11], 9)
+print(result)
+
