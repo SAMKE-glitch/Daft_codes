@@ -18,7 +18,18 @@ class Solution():
             for j in range(i+1, len(nums)):
                 if nums[i] + nums[j] == target:
                     return([i, j])
+    
+    def Two_sum_dict(self, nums:List[int], target: int) -> List[int]:
+        seen = {}
+        for i, num in enumerate(nums):
+            if target - num in seen:
+                return([seen[target - num], i])
+            elif num not in seen:
+                seen[num] = i
+
+
 sam = Solution()
 result = sam.add_Two_sum([2, 7, 11], 9)
 print(result)
-
+result_2 = sam.Two_sum_dict([2, 7, 11], 9)
+print(result_2)
