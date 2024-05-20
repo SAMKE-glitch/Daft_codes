@@ -18,7 +18,8 @@ class ListNode:
 
 class Solution:
     def addTwoNumbers(self, l1: ListNode, l2: ListNode) -> ListNode:
-
+        added = ListNode(val = (l1.val + l2.val) % 10)
+        carry_over = (l1.val + l2.val) // 10
 
 
 # Create the first linked list representing the number 342
