@@ -25,7 +25,13 @@ class Solution:
         # declare a current node to track the operation we are doing
         current_node = added
 
+        while(l1.next and l2.next):
+            l1 = l1.next
+            l2 = l2.next
 
+            current_node.next = ListNode(val = (carry_over + l1.val + l2.val) % 10)
+            carry_over = (carry_over + l1.val + l2.val) // 10
+            current_node = current_node.next
 
 # Create the first linked list representing the number 342
 l1 = ListNode(2)
