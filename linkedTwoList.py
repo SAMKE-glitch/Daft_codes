@@ -47,6 +47,11 @@ class Solution:
             carry_over = (carry_over + l2.val) // 10
             current_node = current_node.next
 
+        if (carry_over) > 0:
+            current_node.next = ListNode(val = 1)
+
+        return added
+
 # Create the first linked list representing the number 342
 l1 = ListNode(2)
 l1.next = ListNode(4)
