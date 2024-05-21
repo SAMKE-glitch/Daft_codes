@@ -18,6 +18,14 @@ class ListNode:
 
 class Solution:
     def addTwoNumbers(self, l1: ListNode, l2: ListNode) -> ListNode:
+        # we need to declare our variable to store the added values
+        added = ListNode(val = (l1.val + l2.val) % 10)
+        # we need to take care of the carried over number to the next node
+        carry_over = (l1.val + l2.val) // 10
+        # declare a current node to track the operation we are doing
+        current_node = added
+
+
 
 # Create the first linked list representing the number 342
 l1 = ListNode(2)
