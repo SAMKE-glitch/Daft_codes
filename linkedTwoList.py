@@ -32,6 +32,20 @@ class Solution:
             current_node.next = ListNode(val = (carry_over + l1.val + l2.val) % 10)
             carry_over = (carry_over + l1.val + l2.val) // 10
             current_node = current_node.next
+        # now we I need to take care when one list node is longer than the other
+        while(l1.next):
+            l1 = l1.next
+
+            current_node.next = ListNode(val = (carry_over + l1.val) % 10)
+            carry_over = (carry_over + l1.val) // 10
+            current_node = current_node.next
+        # do the same for l2 
+        while(l2.next):
+            l2 = l2.next
+
+            current_node.next = ListNode(val = (carry_over + l2.val) % 10)
+            carry_over = (carry_over + l2.val) // 10
+            current_node = current_node.next
 
 # Create the first linked list representing the number 342
 l1 = ListNode(2)
