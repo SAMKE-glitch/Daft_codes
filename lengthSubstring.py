@@ -12,5 +12,6 @@ Input: 1
 Explanation: The answer is "b", with the length of 1
 """
 class lengthOfLongestSubstring(self, s:str) -> int:
-
+    sub = {}
+    cur_sub_start = 0
 
