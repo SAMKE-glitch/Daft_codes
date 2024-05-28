@@ -27,8 +27,10 @@ class Solution:
             if letter in seen and seen[letter] >= cur_sub_start:
                 cur_sub_start = seen[letter] + 1
                 cur_len = i - seen[letter]
+                seen[letter] = i
             else:
                 seen[letter] = i
+                cur_len += 1
                 if cur_len > longest:
                     longest = cur_len
         return longest
