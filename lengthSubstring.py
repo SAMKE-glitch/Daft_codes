@@ -1,4 +1,4 @@
-#!/usr/bin.env python3
+#!/usr/bin/env python3
 """
 Given a string, find the length of the longest substring
 without repeating characters
@@ -14,20 +14,26 @@ Explanation: The answer is "b", with the length of 1
 class Solution:
 
     def lengthOfLongestSubstring(self, s:str) -> int:
-        sub = {}
+        # dict to store letter and index
+        seen = {}
+        # variable to store current start of the index of the substring
         cur_sub_start = 0
+        # current substring length
         cur_len = 0
+        # variable to store the longest substring
         longest = 0
 
         for i, letter in enumerate(s):
-            if letter in sub and sub[letter] >= cur_sub_start:
-                cur_sub_start = sub[letter] + 1
-                cur_len = i - sub[letter]
-                sub[letter] = i
+            if letter in seen and seen[letter] >= cur_sub_start:
+                cur_sub_start = seen[letter] + 1
+                cur_len = i - seen[letter]
             else:
-                sub[letter] = i
-                cur_len += 1
-                if cur_len > lengest:
+                seen[letter] = i
+                if cur_len > longest:
                     longest = cur_len
-        return(longest)
+        return longest
 
+
+sub = Solution()
+result = sub.lengthOfLongestSubstring("abcabcbb")
+print(result)
