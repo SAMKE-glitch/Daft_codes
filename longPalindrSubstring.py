@@ -21,3 +21,5 @@ Constraints:
     -> 1 <= s.lenght <= 1000
     -> s Consist of only digits and English letter (lower-case and/or upper-case)
 """
+class Solution():
+
