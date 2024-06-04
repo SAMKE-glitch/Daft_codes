@@ -44,4 +44,14 @@ class Solution():
 
         # handle edge case when no string or single character available
         if not s or len(s) == 1:
-        return s
+            return s
+
+        longest = ""
+        # iterate through the len s
+        for i in range(len(s)):
+            # Handle for odd len
+            temp = expand_around_center(i, i)
+            if len(temp) > len(longest):
+                longest = temp
+
+
