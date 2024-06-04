@@ -54,4 +54,11 @@ class Solution():
             if len(temp) > len(longest):
                 longest = temp
 
+            #Handle for even len s
+            temp = expand_around_center(i, i+1)
+            if len(temp) > len(longest):
+                longest = temp
+        return longest
+
+
 
