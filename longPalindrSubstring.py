@@ -21,6 +21,7 @@ Constraints:
     -> 1 <= s.lenght <= 1000
     -> s Consist of only digits and English letter (lower-case and/or upper-case)
 """
+#from Typing import list
 class Solution():
     def longestPalindrome(self, s: str) -> str:
 
@@ -31,4 +32,13 @@ class Solution():
         for length in range(len(s), 0, -1):
             for start_index in range(0, len(s) + 1 - length):
                 if check_palin(s[start_index : start_index + length]):
-                    return(s[start_index : start_index + length])
+                    return(s[start_index : start_index + length])i
+        
+
+        # The most efficient solution and optimized one
+        def expand_around_center(self, left:int, right:int) -> str:
+            while(left > 0 and right < len(s) and s[left] == s[right]:
+                    left -= 1
+                    right += 1
+            return(s[left + 1: right))
+
