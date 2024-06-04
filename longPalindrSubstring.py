@@ -42,3 +42,6 @@ class Solution():
                     right += 1
             return(s[left + 1: right))
 
+        # handle edge case when no string or single character available
+        if not s or len(s) == 1:
+        return s
