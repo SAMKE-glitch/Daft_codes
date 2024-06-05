@@ -32,15 +32,15 @@ class Solution():
         for length in range(len(s), 0, -1):
             for start_index in range(0, len(s) + 1 - length):
                 if check_palin(s[start_index : start_index + length]):
-                    return(s[start_index : start_index + length])i
+                    return(s[start_index : start_index + length])
         
 
         # The most efficient solution and optimized one
         def expand_around_center(self, left:int, right:int) -> str:
-            while(left > 0 and right < len(s) and s[left] == s[right]:
+            while(left > 0 and right < len(s) and s[left] == s[right]):
                     left -= 1
                     right += 1
-            return(s[left + 1: right))
+            return(s[left + 1: right])
 
         # handle edge case when no string or single character available
         if not s or len(s) == 1:
@@ -59,6 +59,11 @@ class Solution():
             if len(temp) > len(longest):
                 longest = temp
         return longest
+
+solution = Solution()
+test_case = "babad"
+result = solution.longestPalindrome(test_case)
+print(result)
 
 
 
