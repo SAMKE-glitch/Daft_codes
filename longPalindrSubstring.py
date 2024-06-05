@@ -24,6 +24,7 @@ Constraints:
 #from Typing import list
 class Solution():
     def longestPalindrome(self, s: str) -> str:
+        #Helper function for First method to solve the problem
 
         def check_palin(s:str) -> bool:
             return(s == s[::-1])
@@ -35,7 +36,7 @@ class Solution():
                     return(s[start_index : start_index + length])
         
 
-        # The most efficient solution and optimized one
+        # Second helper function, the most efficient solution and optimized one
         def expand_around_center(self, left:int, right:int) -> str:
             while(left > 0 and right < len(s) and s[left] == s[right]):
                     left -= 1
