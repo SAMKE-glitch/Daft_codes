@@ -27,3 +27,6 @@ Example 3:
     Output: "A"
 
 """
+class Solution:
+    def convert(self, s: str, numRows: int) -> str:
+
