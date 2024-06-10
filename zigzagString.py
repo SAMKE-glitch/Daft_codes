@@ -39,6 +39,7 @@ class Solution:
 
         # iterate through the string s to get each letter
         for letter in s:
+            dict_s[row] += letter
             if (numRows == 1) or ((row < numRows) and up):
                 row += 1
                 up = True
@@ -52,7 +53,7 @@ class Solution:
         return converted
 
 sam = Solution()
-s = "PAYPALISHIRING"
+a = "PAYPALISHIRING"
 num = 4
-result = sam.convert(s, num)
+result = sam.convert(a, num)
 print(result)
