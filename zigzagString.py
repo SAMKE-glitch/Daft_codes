@@ -40,7 +40,7 @@ class Solution:
         # iterate through the string s to get each letter
         for letter in s:
             dict_s[row] += letter
-            if (numRows == 1) or ((row < numRows) and up):
+            if (row == 1) or ((row < numRows) and up):
                 row += 1
                 up = True
             else:
