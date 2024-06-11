@@ -28,6 +28,7 @@ Example 3:
 
 """
 class Solution:
+    # working solution
     def convert(self, s: str, numRows: int) -> str:
         if numRows == 1:
             return s
