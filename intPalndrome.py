@@ -20,6 +20,9 @@ Explanation: Reads 01 from right to left. Therefore it is not a palindrome
 class Solution():
     def intPalin(self, s : int) -> bool:
         return(str(s) == str(s)[::-1])
+
+    # Solution for integers not converting to str
+
 b = Solution()
 test = 121
 result = b.intPalin(test)
