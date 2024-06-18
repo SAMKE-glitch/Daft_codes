@@ -25,6 +25,11 @@ class Solution():
         rev_num = 0
         digit = 0
 
+        while (s // 10 ** digit != 0):
+            rev_num = (rev_num * 10) + (s // 10 ** digit) // 10
+            digit += 1
+        return(s == rev_num)
+
 
 b = Solution()
 test = 10
