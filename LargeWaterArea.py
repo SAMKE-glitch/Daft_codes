@@ -11,9 +11,28 @@ Example:
     Input: [1, 8, 6, 2, 5, 4, 8, 3, 7]
     Output : 49
 """
-from Typing import list
+from typing import List
 
 
 class Solution():
-    def maxArea(self, height: list[int]) -> int:
+    def maxArea(self, height: List[int]) -> int:
+        start = 0
+        end = len(height) - 1
+        largest = 0
 
+        while start != end:
+            new_area = min(height[start], height[end]) * (end - start)
+
+            if new_area > largest:
+                largest = new_area
+
+            if start < end:
+                start += 1
+            if end < start:
+                end -= 1
+        return largest
+
+s = [1, 8, 6, 2, 5, 4, 8, 3, 7]
+test = Solution()
+result = test.maxArea(s)
+print(result)
