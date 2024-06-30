@@ -1,1 +1,1 @@
-## Everything about my coding challanges
+# Everything about my coding challanges
