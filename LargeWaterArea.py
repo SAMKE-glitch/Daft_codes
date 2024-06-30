@@ -34,8 +34,10 @@ class Solution():
                 largest = new_area
 
             if start < end:
+                prev_start = start
                 start += 1
             if end < start:
+                prev_end = end
                 end -= 1
         return largest
 
