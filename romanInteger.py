@@ -32,4 +32,17 @@ Example 2:
 Example 3:
     Input: s = "IX"
     Output: 9
+Example 4:
+    Input: s = "LVIII"
+    Output: 58
+    Explanation: L = 50, V = 5, III = 3
+Example 5:
+    Input: s = "MCMXCIV"
+    Output: 1994
+    Explanation: M = 1000, CM = 900, XC = 90 and IV = 4
+
+Constraints:
+    1 <= s.length <= 15
+    s contains only characters ('I', 'V', 'X', 'L', 'C', 'D', 'M')
+    It is guranteed that s is aa valid roman numeral in the range [1, 3999]
 """
