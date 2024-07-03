@@ -55,3 +55,7 @@ class Solution:
                        "C": 100,
                        "D": 500,
                        "M": 1000}
+        print(roman_table["I"])
+sam = Solution()
+a = "I"
+result = sam.romanToInt(a)
