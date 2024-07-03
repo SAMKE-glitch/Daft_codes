@@ -55,6 +55,14 @@ class Solution:
                        "C": 100,
                        "D": 500,
                        "M": 1000}
+        # String conversion method
+        convert = {"IV": "IIII", "IX": "VIIII", "XL": "XXXX",
+                    "XC": "LXXXX", "CD": "CCCC", "CM": "DCCCC"}
+        # iterate through convert dict
+        for k, v in convert:
+            #replace string in s
+            s = s.replace(k, v)
+        return sum(roman_table[numeral] for numeral in s)
         # Reverse iteration solution
         # variable to hold total number converted
         num = 0
