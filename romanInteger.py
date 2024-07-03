@@ -55,7 +55,22 @@ class Solution:
                        "C": 100,
                        "D": 500,
                        "M": 1000}
-        print(roman_table["I"])
+        # variable to hold total number converted
+        num = 0
+        # variable to hold last seen character in that string
+        last = "I"
+
+        # for loop iterating the string in reverse
+        for numeral in s[::-1]:
+            # handle the edge case if current numeral is less than last
+            if roman_table[numeral] < roman_table[last]:
+                num -= roman_table[numeral]
+            else:
+                num += roman_table[numeral]
+            last = numeral
+        return num
+
 sam = Solution()
-a = "I"
+a = "LVIII"
 result = sam.romanToInt(a)
+print(result)
