@@ -71,6 +71,6 @@ class Solution:
         return num
 
 sam = Solution()
-a = "LVIII"
+a = "MCMXCIV"
 result = sam.romanToInt(a)
 print(result)
