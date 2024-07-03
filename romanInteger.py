@@ -55,6 +55,7 @@ class Solution:
                        "C": 100,
                        "D": 500,
                        "M": 1000}
+        # Reverse iteration solution
         # variable to hold total number converted
         num = 0
         # variable to hold last seen character in that string
