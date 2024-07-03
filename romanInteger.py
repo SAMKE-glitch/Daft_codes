@@ -59,7 +59,7 @@ class Solution:
         convert = {"IV": "IIII", "IX": "VIIII", "XL": "XXXX",
                     "XC": "LXXXX", "CD": "CCCC", "CM": "DCCCC"}
         # iterate through convert dict
-        for k, v in convert:
+        for k, v in convert.items():
             #replace string in s
             s = s.replace(k, v)
         return sum(roman_table[numeral] for numeral in s)
