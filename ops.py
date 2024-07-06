@@ -16,5 +16,5 @@ def calPoints(ops) -> int:
     return sum(stack)
 
 if __name__ == "__main__":
-    ops1 = ["5", "2", "C", "D", "+"]
+    ops1 = ["5", "-2", "4", "C", "D", "9", "+", "+"]
     print(calPoints(ops1))
