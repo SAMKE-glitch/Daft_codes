@@ -15,6 +15,8 @@ Example 2:
 NTE:
     All given inputs are in lowercase letters a-z.
 """
+from typing import List
+
 class Solution():
     def longestCommonPrefix(self, strs: List[str]) -> str:
         if len(strs) == 0:
@@ -33,3 +35,8 @@ class Solution():
                 if plen == 0:
                     return("")
         return pref
+
+a = Solution()
+check = ["flower", "flow", "flight"]
+result = a.longestCommonPrefix(check)
+print(result)
