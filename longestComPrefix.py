@@ -20,7 +20,7 @@ from typing import List
 class Solution():
     def longestCommonPrefix(self, strs: List[str]) -> str:
         if len(strs) == 0:
-            return("")
+            return(" ")
         if len(strs) == 1:
             return(strs[0])
 
@@ -33,10 +33,10 @@ class Solution():
                 plen -= 1
 
                 if plen == 0:
-                    return("")
+                    return(" ")
         return pref
 
 a = Solution()
-check = ["flower", "flow", "flight"]
+check = ["dog", "racecar", "car"]
 result = a.longestCommonPrefix(check)
 print(result)
