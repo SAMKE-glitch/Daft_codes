@@ -12,4 +12,12 @@ Example 1:
 Example 2:
     Input: nums = []
     Output: []
+
+Example 3:
+    Input: nums = [0]
+    Output: []
+
+Constraints:
+    0 <= nums.length <= 3000
+    -10^5 <= nums[i] <= 10^5
 """
