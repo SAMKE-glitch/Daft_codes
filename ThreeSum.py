@@ -23,5 +23,9 @@ Constraints:
 """
 class Solution:
     def threeSum(self, nums: List[int]) -> List[List[Int]]:
-
+        triplets = []
+        # handle the edge cases
+        if len(nums) < 3:
+            return([])
         #n^3 Triple for loop solution
+
