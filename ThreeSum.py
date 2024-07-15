@@ -27,6 +27,9 @@ class Solution:
         # handle the edge cases
         if len(nums) < 3:
             return([])
+
+        # n^3 Solution with sorting
+
         #n^3 Triple for loop solution
         for i in range(0, len(nums) - 2):
             for j in range(i+1, len(nums) - 1):
