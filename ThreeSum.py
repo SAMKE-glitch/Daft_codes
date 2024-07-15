@@ -28,7 +28,21 @@ class Solution:
         if len(nums) < 3:
             return([])
 
+        nums = sorted(nums)
+
         # n^3 Solution with sorting
+        for i in range(0, len(nums) - 2):
+            lower = i + 1
+            upper = len(nums) - 1
+            while lower < upper:
+                s = nums[i] + nums[lower] + nums[upper]
+                if s == 0:
+                    triplets.append((nums[i] , nums[lower] , nums[upper]))
+                elif s < 0:
+                    lower += 1
+                else:
+                    upper -= 1
+        return(list(set(triplets)))
 
         #n^3 Triple for loop solution
         for i in range(0, len(nums) - 2):
