@@ -21,8 +21,11 @@ Constraints:
     0 <= nums.length <= 3000
     -10^5 <= nums[i] <= 10^5
 """
+from typing import List
+
+
 class Solution:
-    def threeSum(self, nums: List[int]) -> List[List[Int]]:
+    def threeSum(self, nums: List[int]) -> List[List[int]]:
         triplets = []
         # handle the edge cases
         if len(nums) < 3:
@@ -43,7 +46,7 @@ class Solution:
                 else:
                     upper -= 1
         return(list(set(triplets)))
-
+    """
         #n^3 Triple for loop solution
         for i in range(0, len(nums) - 2):
             for j in range(i+1, len(nums) - 1):
@@ -51,6 +54,7 @@ class Solution:
                     if (nums[i] + nums[j] + nums[k]) == 0:
                         triplets.append(tuple(sorted([nums[i] , nums[j] , nums[k]])))
         return(list(set(triplets)))
+    """
 
 sam = Solution()
 Input = [-1, 0, 1, 2, -1, -4]
