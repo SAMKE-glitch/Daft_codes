@@ -52,4 +52,7 @@ class Solution:
                         triplets.append(tuple(sorted([nums[i] , nums[j] , nums[k]])))
         return(list(set(triplets)))
 
-
+sam = Solution()
+Input = [-1, 0, 1, 2, -1, -4]
+result = sam.threeSum(Input)
+print(result)
