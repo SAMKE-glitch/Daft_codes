@@ -52,7 +52,7 @@ class Solution:
                         lower += 1
                 else:
                     upper -= 1
-        return(list(set(triplets)))
+        return(triplets)
     """
         #n^3 Triple for loop solution
         for i in range(0, len(nums) - 2):
