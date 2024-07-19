@@ -5,7 +5,7 @@ in nums such that the nums is closet to target. Return the sum of the three inte
 You may assume that each input would have exactly one solution
 
 Example 1:
-    Input: nums = [-1, 2, 1, -4], target = 1
+    Input: nums = [-1,2,1,-4], target = 1
     Output: 2
     Explanation: The sum that is closest to the target is 2. (-1 + 2 + 1 = 2)
 
@@ -18,7 +18,7 @@ from typing import List
 
 
 class Solution:
-    def threeSumClosest(self, List[int], target: int) -> int:
+    def threeSumClosest(self, nums: List[int], target: int) -> int:
         best_s = 10000
         #n^2 solution with sorting
         nums.sort()
@@ -35,7 +35,7 @@ class Solution:
                 if s == target:
                     return(s)
                 
-                if abs(target- s) < abs(tartget - best_s):
+                if abs(target- s) < abs(target - best_s):
                     best_s = s
 
                 if s <= target:
@@ -49,7 +49,7 @@ class Solution:
 
 
 sam = Solution()
-Input = [-1, 2, 1, -4]
+Input = [-1,2,1,-4]
 trg = 1
 result = sam.threeSumClosest(Input, trg)
 print(result)
