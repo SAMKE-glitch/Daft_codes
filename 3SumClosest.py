@@ -14,3 +14,6 @@ Constraints:
     -10^3 <= nums[i] <= 10^3
     -10^4 <= target <= 10^4
 """
+class Solution:
+    def threeSumClosest(self, List[int], target: int) -> int:
+
