@@ -20,5 +20,13 @@ An input string is valid if:
 
     Example 4:
     Input: s = "([)]"
+    Output: false
+
+    Example 5:
+    Input: s = "{[]}"
     Output: true
+
+    Constraints:
+    1 <= s.length <= 10^4
+    s consists of parenthesis only "()[]{}"
 """
