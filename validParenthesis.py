@@ -31,4 +31,5 @@ An input string is valid if:
     s consists of parenthesis only "()[]{}"
 """
 class Solution:
+    def isValid(self, s: str) -> bool:
 
