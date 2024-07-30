@@ -38,6 +38,11 @@ class Solution:
             start_length = len(s)
             for inner in ["{}", "[]", "()"]:
                 s = s.replace("inner", "")
-            if start_lenght ==len(s):
+            if start_length == len(s):
                 replace = False
         return s == ""
+
+sam = Solution()
+Input = "()"
+result = sam.isValid(Input)
+print(result)
