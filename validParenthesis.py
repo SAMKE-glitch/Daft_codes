@@ -37,7 +37,7 @@ class Solution:
         while replace:
             start_length = len(s)
             for inner in ["{}", "[]", "()"]:
-                s = s.replace("inner", "")
+                s = s.replace(inner, "")
             if start_length == len(s):
                 replace = False
         return s == ""
