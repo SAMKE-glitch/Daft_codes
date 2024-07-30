@@ -32,4 +32,12 @@ An input string is valid if:
 """
 class Solution:
     def isValid(self, s: str) -> bool:
-        # Solution one
+        # Inner string replace method
+        replace = True
+        while replace:
+            start_length = len(s)
+            for inner in ["{}", "[]", "()"]:
+                s = s.replace("inner", "")
+            if start_lenght ==len(s):
+                replace = False
+        return s == ""
