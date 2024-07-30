@@ -43,6 +43,6 @@ class Solution:
         return s == ""
 
 sam = Solution()
-Input = "()"
+Input = "([)]"
 result = sam.isValid(Input)
 print(result)
