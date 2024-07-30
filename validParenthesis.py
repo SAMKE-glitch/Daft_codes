@@ -32,4 +32,4 @@ An input string is valid if:
 """
 class Solution:
     def isValid(self, s: str) -> bool:
-
+        # Solution one
