@@ -32,6 +32,9 @@ An input string is valid if:
 """
 class Solution:
     def isValid(self, s: str) -> bool:
+
+        # Optimized solution && Efficient one
+
         # Inner string replace method
         replace = True
         while replace:
