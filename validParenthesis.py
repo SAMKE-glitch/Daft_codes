@@ -34,6 +34,7 @@ class Solution:
     def isValid(self, s: str) -> bool:
 
         # Optimized solution && Efficient one
+        # Close the last seen opening symbol
 
         # Inner string replace method
         replace = True
