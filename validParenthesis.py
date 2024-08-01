@@ -45,6 +45,7 @@ class Solution:
         return opens == []
 
         # Inner string replace method
+        """
         replace = True
         while replace:
             start_length = len(s)
@@ -52,7 +53,7 @@ class Solution:
                 s = s.replace(inner, "")
             if start_length == len(s):
                 replace = False
-        return s == ""
+        return s == """""
 
 sam = Solution()
 Input = "([)]"
