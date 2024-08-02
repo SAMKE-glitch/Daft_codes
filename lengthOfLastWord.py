@@ -12,3 +12,17 @@ Example 2:
     Input: s = ""
     Output: 0
 """
+import typing
+
+
+class Solution:
+    def lenOfLastWord(self, s:[str]) -> int:
+        if len(s) == 0:
+            return 0
+        lastWord = s - 1
+        return len(lastWord)
+
+sam = Solution()
+Input = "Hello World"
+result = sam.lenOfLastWord(Input)
+print(result)
