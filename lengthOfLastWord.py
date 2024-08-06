@@ -37,6 +37,6 @@ class Solution:
         return len(words[-1])
 
 sam = Solution()
-Input = "Samwel Mwawasi"
+Input = "Mwakughu Samwel"
 result = sam.lenOfLastWord(Input)
 print(result)
