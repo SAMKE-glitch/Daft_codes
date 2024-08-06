@@ -21,12 +21,22 @@ import typing
 
 class Solution:
     def lenOfLastWord(self, s: str) -> int:
+        # returning length of word using manual string count
+        count = 0
+        for letter in s[::-1]:
+            if letter == " ":
+                if count >= 1:
+                    return count
+            else:
+                count += 1
+        return count
+        # length of last word using string methods
         words = s.strip().split()
         if not words:
             return 0
         return len(words[-1])
 
 sam = Solution()
-Input = " "
+Input = "Hello World"
 result = sam.lenOfLastWord(Input)
 print(result)
