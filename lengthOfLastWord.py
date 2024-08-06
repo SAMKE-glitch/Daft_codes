@@ -23,6 +23,6 @@ class Solution:
         return len(words[-1])
 
 sam = Solution()
-Input = "Hello World"
+Input = " "
 result = sam.lenOfLastWord(Input)
 print(result)
