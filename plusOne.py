@@ -18,4 +18,8 @@ Example 2:
 Example 3:
     Input: digits = [0]
     Output: [1]
+
+Constarints:
+    1 <= digits.length <= 100
+    0 <= digits[i] <= 9
 """
