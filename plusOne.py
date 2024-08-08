@@ -28,5 +28,10 @@ from typing import List
 
 class Solution:
     def plusOne(self, digits: List[int]) -> List[int]:
+        # Method 1: Type conversion
+        return [int(x) for x in str(int("".join([str(i) for i in digits])) + 1)]
 
-
+sam = Solution()
+Input = [4, 3, 2, 1]
+result = sam.plusOne(Input)
+print(result)
