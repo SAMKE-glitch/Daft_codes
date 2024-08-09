@@ -42,6 +42,6 @@ class Solution:
         return [int(x) for x in str(int("".join([str(i) for i in digits])) + 1)]"""
 
 sam = Solution()
-Input = [4, 3, 2, 1]
+Input = [9,9,9,9]
 result = sam.plusOne(Input)
 print(result)
