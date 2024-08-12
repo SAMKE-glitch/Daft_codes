@@ -25,6 +25,9 @@ class Solution:
         # exponent
         return int(x**(1/2))
 
+        # math library
+        return int(math.sqrt(x))
+
 
 sam = Solution()
 Input = 36
