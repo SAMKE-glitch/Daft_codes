@@ -27,6 +27,6 @@ class Solution:
 
 
 sam = Solution()
-Input = 8
+Input = 36
 result = sam.mySqrt(Input)
-print result
+print(result)
