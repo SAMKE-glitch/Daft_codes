@@ -17,3 +17,16 @@ Example 2:
 Constraints:
     0 <= x <= 2^31 - 1
 """
+import math
+
+
+class Solution:
+    def mySqrt(self, x:int)-> int:
+        # exponent
+        return int(x**(1/2))
+
+
+sam = Solution()
+Input = 8
+result = sam.mySqrt(Input)
+print result
