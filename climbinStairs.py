@@ -31,6 +31,6 @@ class Solution:
         return(path[n])
 
 sam = Solution()
-Input = 44
+Input = 9
 result = sam.climbStairs(Input)
 print(result)
