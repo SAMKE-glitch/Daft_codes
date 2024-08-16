@@ -18,4 +18,12 @@ return its depth = 3
 
 class Solution:
     def maxDepth(self, root: TreeNode) -> int:
+        if not root:
+            return 0
+        
+        return(1 + max(self.maxDepth(root.left), self.maxDepth(root.right)))
 
+sam = Solution()
+Input = [3, 9, 20, null, null, 15, 7]
+result = sam.maxDepth(Input)
+print(result)
