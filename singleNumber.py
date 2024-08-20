@@ -30,6 +30,6 @@ class Solution:
         return list(counts.keys())[0]
 
 sam = Solution()
-Input = [2,2,1]
+Input = [4,1,2,1,2]
 result = sam.singleNumber(Input)
 print(result)
