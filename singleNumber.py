@@ -20,14 +20,14 @@ from typing import List
 class Solution:
     def singleNumber(self, nums: List[int]) -> int:
         # the dictionary method to store counts
-        counts = {}
+        """counts = {}
         
         for n in nums:
             if n not in counts:
                 counts[n] = 1
             else:
                 del counts[n]
-        return list(counts.keys())[0]
+        return list(counts.keys())[0]"""
         # Bitwise XOR Bit manipulation https://www.geeksforgeeks.org/python-bitwise-operators/
 
         a = 0
