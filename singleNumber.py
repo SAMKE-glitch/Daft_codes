@@ -18,7 +18,7 @@ from typing import List
 
 
 class Solution:
-    def singleNumber(self, nums: List[int]) _> int:
+    def singleNumber(self, nums: List[int]) -> int:
         # the dictionary method to store counts
         counts = {}
         
