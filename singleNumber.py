@@ -28,6 +28,7 @@ class Solution:
             else:
                 del counts[n]
         return list(counts.keys())[0]
+        # Bitwise XOR Bit manipulation https://www.geeksforgeeks.org/python-bitwise-operators/
 
 sam = Solution()
 Input = [4,1,2,1,2]
