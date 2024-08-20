@@ -19,4 +19,17 @@ from typing import List
 
 class Solution:
     def singleNumber(self, nums: List[int]) _> int:
+        # the dictionary method to store counts
+        counts = {}
+        
+        for n in nums:
+            if n not in counts:
+                counts[n] = 1
+            else:
+                del counts[n]
+        return list(counts.keys())[0]
 
+sam = Solution()
+Input = [2,2,1]
+result = sam.singleNumber(Input)
+print(result)
