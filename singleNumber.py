@@ -30,6 +30,11 @@ class Solution:
         return list(counts.keys())[0]
         # Bitwise XOR Bit manipulation https://www.geeksforgeeks.org/python-bitwise-operators/
 
+        a = 0
+        for i in nums:
+            a ^= i
+        return a
+
 sam = Solution()
 Input = [4,1,2,1,2]
 result = sam.singleNumber(Input)
