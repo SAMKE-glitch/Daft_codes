@@ -12,3 +12,9 @@ Example 2:
     Input: [2,2,1,1,1,2,2]
     Output: 2
 """
+from typing import List
+
+
+class Solution:
+    def majorityElement(self, nums: List[int]) -> int:
+        # dictionary way to solve 
