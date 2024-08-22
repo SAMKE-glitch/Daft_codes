@@ -17,7 +17,7 @@ from typing import List
 
 class Solution:
     def majorityElement(self, nums: List[int]) -> int:
-        # dictionary way to solve
+        """# dictionary way to solve
         sums = {}
 
         for n in nums:
@@ -26,8 +26,9 @@ class Solution:
             else:
                 sums[n] += 1
             if sums[n] > len(nums) / 2:
-                return n
-        # sorted way 
+                return n"""
+        # sorted way
+        return sorted(nums)[len(nums)//2]
 
 sam = Solution()
 Input = [2,2,1,1,1,2,2]
