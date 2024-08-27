@@ -26,4 +26,5 @@ class Solution:
             if n != 0:
                 nums[next_non_zero] = n
                 next_non_zero += 1
-
+        for i in range(next_non_zero, len(nums)):
+            nums[i] = 0
