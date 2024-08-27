@@ -19,3 +19,5 @@ class Solution:
         """
         Do not return anything, modify nums in-place instead
         """
+        zero_count = nums.count(0)
+        next_non_zero = 0
