@@ -32,4 +32,4 @@ class Solution:
 sam = Solution()
 Input = [0,1,0,3,12]
 result = sam.moveZeroes(Input)
-print(result)
+print(Input)
