@@ -16,5 +16,10 @@ Example 1:
 Example 2:
     Input: 3
     Output: 2
-    Explanation: F(3) = F(2) + F(1) = 1 
+    Explanation: F(3) = F(2) + F(1) = 1
+
+Example 3:
+    Input: 4
+    Output: 3
+    Explanation: F(4) = F(3) + F(2) = 2 + 1 = 3
 """
