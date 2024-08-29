@@ -26,3 +26,6 @@ Example 3:
 Note:
     0 <= N <= 30
 """
+class Solution:
+    def fibo(self, N: int) -> int:
+
