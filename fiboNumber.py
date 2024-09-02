@@ -34,6 +34,11 @@ class Solution:
             return 0
         if N == 1:
             return 1
-
+        """
         # recursive function return
-        return(self.fibo(N-1) + self.fibo(N-2))
+        return(self.fibo(N-1) + self.fibo(N-2)i)"""
+        # method to by using a dictionary
+        seen = {0: 0, 1: 1}
+        for i in range(2, N+1):
+            seen[i] = seen[i-1] + seen[i-2]
+        return seen[N]
