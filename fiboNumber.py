@@ -28,4 +28,7 @@ Note:
 """
 class Solution:
     def fibo(self, N: int) -> int:
-
+        # in recursive solution
+        # The recursive function always need to have a base cas to follow
+        if N == 0:
+            return 0
