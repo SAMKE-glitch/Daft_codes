@@ -34,3 +34,6 @@ class Solution:
             return 0
         if N == 1:
             return 1
+
+        # recursive function return
+        return(self.fibo(N-1) + self.fibo(N-2))
