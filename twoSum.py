@@ -10,5 +10,8 @@ Example:
     Because nums[0] + nums[1] = 2 +7 = 9,
     return [0, 1]
 """
-class Solution:
+from typing import List
 
+
+class Solution:
+    def twoSum(self, nums: List[int], target: int) -> List[int]:
