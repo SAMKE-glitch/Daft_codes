@@ -18,10 +18,11 @@ class Solution:
         # the for loop solution Bruteforce
         for i in range(len(nums)-1):
             for j in range(i+1, len(nums)):
-                if nums[i] + nums[j] = target:
+                if nums[i] + nums[j] == target:
                     return([i, j])
 
 sam = Solution()
 Input = [2, 7, 11, 15]
-result = sam.twoSum(Input)
+t = 9
+result = sam.twoSum(Input, t)
 print(result)
