@@ -22,6 +22,7 @@ class Solution:
                 if nums[i] + nums[j] == target:
                     return([i, j])
                     """
+        # Dictinary solution or hashmap
 
 sam = Solution()
 Input = [2, 7, 11, 15]
