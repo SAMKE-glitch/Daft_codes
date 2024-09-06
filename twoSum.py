@@ -23,6 +23,12 @@ class Solution:
                     return([i, j])
                     """
         # Dictinary solution or hashmap
+        seen = {}
+        for i, num in enumerate(nums):
+            if target - num in seen:
+                return([seen[target - num], seen[i]])
+            elif num not in seen:
+                seen[num] = i
 
 sam = Solution()
 Input = [2, 7, 11, 15]
