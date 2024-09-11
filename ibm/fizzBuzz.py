@@ -18,4 +18,10 @@ class Solution:
             elif i % 5 == 0:
                 print("Buzz")
             else:
-                print(i)
+                print(i)i
+
+
+sam = Solution()
+Input = 15
+result = sam.fizzBuzz(Input)
+print(result)
