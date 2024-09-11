@@ -21,7 +21,6 @@ class Solution:
                 print(i)
 
 
-sam = Solution()
-Input = 15
-result = sam.fizzBuzz(Input)
-print(result)
+if __name__ == "__main__":
+    solution = Solution()
+    solution.fizzBuzz(15)
