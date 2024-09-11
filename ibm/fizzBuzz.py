@@ -10,7 +10,7 @@ per line as follows:
 class Solution:
     def fizzBuzz(self, n: int) -> None:
         # we have to iterate the n
-        for i in range(n):
+        for i in range(1, n+1):
             if i % 3 == 0 and i % 5 == 0:
                 print("FizzBuzz")
             elif i % 3 == 0:
@@ -18,7 +18,7 @@ class Solution:
             elif i % 5 == 0:
                 print("Buzz")
             else:
-                print(i)i
+                print(i)
 
 
 sam = Solution()
