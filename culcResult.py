@@ -7,20 +7,22 @@ from typing import List
 
 class Solution:
     def culcResult(self, Input: List[str]) -> int:
-        # List convert from str to int
-        # ['0', '4', '5', '9', '10x']
-        sumInt = 0
+        # getting the cards dealt
+        cards = [int(x) if x.isdigit() else x for x in Input]
+        if '0' in Input:
+            #remove highest card if '0' is present
+            cards.remove(max(cards))
+        # sum all integer cards
+        total = sum([x for x in cards if isinstance(x, int)])
+        if '10x' in cards:
+            total += max([x for x in cards if isinstance(x, int)]) * 9
+        return total
 
-        # iterate the list
-        for i in Input:
-            if i == '10x':
-                sumInt *= 10
-            else:
-                sumInt += int(i)
-        return sumInt
+
+
 
 
 sam = Solution()
-Iput = ['0', '4', '5', '9', '10x']
-result = sam.culcResult(Iput)
+Input = ['0', '4', '5', '9', '10x']
+result = sam.culcResult(Input)
 print(result)
