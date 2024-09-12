@@ -20,7 +20,6 @@ class Solution:
             else:
                 print(i)
 
-
 if __name__ == "__main__":
     solution = Solution()
     solution.fizzBuzz(15)
