@@ -7,4 +7,22 @@ of each character in alphabetical order followed by the total count of that char
 """
 class Solution:
     def stringFreq(self, S: str) -> str:
+        #0 I need to declare an empty dictionary to store char and its frequency
         #1 iterate the string and pick each character with its subsequent freq and store them to a dictionary
+        #2 so we need to obtin these value from the string and then able to store them to the dictionary
+        dictionary_freq = {}
+        for i in range(0, len(S), 2):
+            char = S[i]
+            freq = int(S[i+1])
+
+            # add the char and freq to the dictionary
+            if char in dictionary_freq:
+                dictionary_freq[char] += freq
+            else:
+                dictionary_freq[char] = freq
+
+        # sort the char in the dictionary
+        compressed_string = ""
+        for char in sorted(dictionary_freq.keys()):
+            compressed_string += f"{char}{dictionary_freq[char]}"
+        return compressed_string
