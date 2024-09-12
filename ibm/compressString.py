@@ -26,3 +26,7 @@ class Solution:
         for char in sorted(dictionary_freq.keys()):
             compressed_string += f"{char}{dictionary_freq[char]}"
         return compressed_string
+
+if __name__ =="__main__":
+    solution = Solution()
+    solution.stringfreq("a2b1c5a3")
