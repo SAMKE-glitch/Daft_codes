@@ -29,4 +29,5 @@ class Solution:
 
 if __name__ =="__main__":
     solution = Solution()
-    solution.stringfreq("a2b1c5a3")
+    result = solution.stringFreq("a2b1c5a3")
+    print(result)
