@@ -15,7 +15,7 @@ class Solution:
         return binary_number
 
 if __name__ == "__main__":
-    Input = (input("enter number"))
+    Input = int(input("enter number: "))
     solution = Solution()
     result = solution.decimalBinary(Input)
     print(result)
