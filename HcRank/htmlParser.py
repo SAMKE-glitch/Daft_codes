@@ -89,7 +89,8 @@ parser = MyHTMLParser()
 
 # take input
 n = int(input())
-html_code = ""
+html_code = """<html><head><title>HTML Parser - I</title></head>
+<body data-modal-target class='1'><h1>HackerRank</h1><br /></body></html>"""
 for _ in range(n):
     html_code += input()
 
