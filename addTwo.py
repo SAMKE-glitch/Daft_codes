@@ -18,3 +18,5 @@ class ListNode:
         self.next = next
 class Solution:
     def addTwoNumbers(self, l1: ListNode, l2: ListNode) -> ListNode:
+        # we have to keep track of the final added linked list
+        added = ListNode(val = (l1.val + l2.val), next=None)
