@@ -25,4 +25,4 @@ class Solution:
         carry_over = (l1.val + l2.val) // 10
 
         # we need to keep track on the node we current look at i
-        current = added
+        current_node = added
