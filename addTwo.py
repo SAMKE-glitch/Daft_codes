@@ -23,3 +23,6 @@ class Solution:
 
         # we need to keep track of the carry over number ie greater than 9 if its 10 we need to carry 1
         carry_over = (l1.val + l2.val) // 10
+
+        # we need to keep track on the node we current look at i
+        current = added
