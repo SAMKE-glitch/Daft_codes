@@ -41,11 +41,12 @@ class Solution:
             l1 = l1.next
             current_node.next = ListNode(val = (carry_over + l1.val) % 10)
             carry_over = (carry_over + l1.val) // 10
-            carry_over = (carry_over + l1.val) // 10
+            current_node = current_node.next
 
         # same if l2 value is only available
         while(l2.next):
             l2 = l2.next
             current_node.next = ListNode(val = (carry_over + l2.val) % 10)
             carry_over = (carry_over + l2.val) // 10
-            carry_over = (carry_over + l2.val) // 10
+            current_node = current_node.next
+
