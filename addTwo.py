@@ -33,3 +33,6 @@ class Solution:
             l2 = l2.next
             current_node.next = ListNode(val = (carry_over + l1.val + l2.val) % 10)
             carry_over = (carry_over + l1.val + l2.val) // 10
+
+            # then update our current node
+            current_node = current_node.next
