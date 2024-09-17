@@ -36,3 +36,11 @@ class Solution:
 
             # then update our current node
             current_node = current_node.next
+        # so there might be only value in one node only like l1 = 2345 l2 = 345
+        while(l1.next):
+            l1 = l1.next
+            current_node.next = ListNode(val = (carry_over + l1.val) % 10)
+            carry_over = (carry_over + l1.val) // 10
+            carry_over = (carry_over + l1.val) // 10
+
+        # same if l2 value is only available
