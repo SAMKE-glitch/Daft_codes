@@ -50,3 +50,10 @@ class Solution:
             carry_over = (carry_over + l2.val) // 10
             current_node = current_node.next
 
+        # accounting for the next 1 on the carry over value
+        if (carry_over) > 0:
+            current_node.next = ListNode(val= 1)
+        
+        #finally return added ListNode
+        return added
+
