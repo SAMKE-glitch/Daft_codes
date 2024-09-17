@@ -26,3 +26,10 @@ class Solution:
 
         # we need to keep track on the node we current look at i
         current_node = added
+
+        # while loop as long as there is next nodes in both l1 and l2
+        while(l1.next and l2.next):
+            l1 = l1.next
+            l2 = l2.next
+            current_node.next = ListNode(val = (carry_over + l1.val + l2.val) % 10)
+            carry_over = (carry_over + l1.val + l2.val) // 10
