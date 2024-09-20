@@ -20,3 +20,5 @@ Example 3:
                 NOTE-> That the answer must be a substring, "pwke" is 
                 a subsequence and not a substring.
 """
+class Solution:
+
