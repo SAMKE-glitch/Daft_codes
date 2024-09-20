@@ -21,4 +21,5 @@ Example 3:
                 a subsequence and not a substring.
 """
 class Solution:
+    def lengthOfLongestSubstring(self, s: str) -> int:
 
