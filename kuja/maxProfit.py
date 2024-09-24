@@ -18,4 +18,19 @@ from typing import List
 
 class Solution:
     def maxProfit(self, prices: List[int], n: int) -> int:
+        if n == 0:
+            return 0
+        # we need to declare 2 parameters one for maxProf and minimum price
+        min_price = prices[0]
+        maxProfit = 0
+
+        for i in range(1, n):
+            current_profit = prices[i] - min_price
+
+            if prices[i] < min_price:
+                min_price = prices[i]
+
+            if current_proft > maxProfit:
+                maxProfit = current_profit
+        return maxProfit
 
