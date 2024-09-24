@@ -12,4 +12,10 @@ Example 1:
     Output: 3
     Explanation: The lowest price is 9 and the highest price is 12
                 so 12 - 9 = 3
-""'
+"""
+from typing import List
+
+
+class Solution:
+    def maxProfit(self, prices: List[int], n: int) -> int:
+
