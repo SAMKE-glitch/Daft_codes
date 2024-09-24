@@ -31,8 +31,10 @@ class Solution:
             if prices[i] < min_price:
                 min_price = prices[i]
 
-            if current_proft > maxProfit:
+            if current_profit > maxProfit:
                 maxProfit = current_profit
+            if maxProfit == 0:
+                return min_price
         return maxProfit
 
 sam = Solution()
