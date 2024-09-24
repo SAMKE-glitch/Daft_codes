@@ -24,6 +24,7 @@ class Solution:
         min_price = prices[0]
         maxProfit = 0
 
+        # iterating the prices array
         for i in range(1, n):
             current_profit = prices[i] - min_price
 
@@ -34,3 +35,8 @@ class Solution:
                 maxProfit = current_profit
         return maxProfit
 
+sam = Solution()
+Input =[10,12,9,11,12]
+number = 5
+result = sam.maxProfit(Input, number)
+print(result)
