@@ -28,4 +28,6 @@ class Solution:
         cur_sub_start = 0
         # current length of our substring we've seen so far
         cur_len = 0
+        # longest substring so far
+        longest = 0
 
