@@ -31,3 +31,5 @@ class Solution:
         # longest substring so far
         longest = 0
 
+        # example of a string "abcdecfab"
+
