@@ -30,6 +30,8 @@ class Solution:
         cur_len = 0
         # longest substring so far
         longest = 0
-
         # example of a string "abcdecfab"
+
+        # loop through every letter in string s and also need index position, so use enumerate
+        for i, letter in enumerate(s):
 
