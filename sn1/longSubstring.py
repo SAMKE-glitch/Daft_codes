@@ -35,5 +35,5 @@ class Solution:
         # loop through every letter in string s and also need index position, so use enumerate
         for i, letter in enumerate(s):
             if letter in sub and sub[letter] >= cur_sub_startIndex:
-
+                cur_sub_startIndex = sub[letter] + 1
 
