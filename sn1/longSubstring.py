@@ -36,4 +36,5 @@ class Solution:
         for i, letter in enumerate(s):
             if letter in sub and sub[letter] >= cur_sub_startIndex:
                 cur_sub_startIndex = sub[letter] + 1
+                cur_len = i - sub[letter]
 
