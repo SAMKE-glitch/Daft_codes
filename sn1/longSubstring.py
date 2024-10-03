@@ -39,6 +39,8 @@ class Solution:
                 cur_len = i - sub[letter]
 
                 # update the index of the letter that we are looking at
-                # instead of the duplicate that we saw like c letter in line 33 
-
+                # instead of the duplicate that we saw like c letter in line 33
+                sub[letter] = i
+            else:
+                sub[letter] = i
 
