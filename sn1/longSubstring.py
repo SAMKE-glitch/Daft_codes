@@ -22,7 +22,7 @@ Example 3:
 """
 class Solution:
     def lengthOfLongestSubstring(self, s: str) -> int:
-        # we need to keep a dictionary that sores the letters we've seen
+        # we need to keep a dictionary that stores the letters we've seen
         sub = {}
         # we need to keep track of the index of our current substring is starting from
         cur_sub_startIndex = 0
