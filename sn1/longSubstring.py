@@ -38,3 +38,7 @@ class Solution:
                 cur_sub_startIndex = sub[letter] + 1
                 cur_len = i - sub[letter]
 
+                # update the index of the letter that we are looking at
+                # instead of the duplicate that we saw like c letter in line 33 
+
+
