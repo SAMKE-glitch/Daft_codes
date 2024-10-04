@@ -48,3 +48,8 @@ class Solution:
                 if cur_len > longest:
                     longest = cur_len
         return longest
+
+sam = Solution()
+Input = "pwwkew"
+result = sam.lengthOfLongestSubstring(Input)
+print(result)
