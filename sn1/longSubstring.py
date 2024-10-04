@@ -45,6 +45,6 @@ class Solution:
                 sub[letter] = i
                 cur_len += 1
 
-            if cur_len > longest:
-                longest = cur_len
+                if cur_len > longest:
+                    longest = cur_len
         return longest
