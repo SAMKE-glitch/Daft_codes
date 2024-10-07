@@ -10,4 +10,9 @@ Example:
 Example 2:
     Input: s = "cbbd"
     Output: "bb"
+
+Example 3:
+    Input: s = "a"
+    Output: "a"
+
 """
