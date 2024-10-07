@@ -6,4 +6,8 @@ Example:
     Input: s = "babad"
     Output: "bab"
     Note: "aba" is also a valid answer
+
+Example 2:
+    Input: s = "cbbd"
+    Output: "bb"
 """
