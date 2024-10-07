@@ -15,4 +15,7 @@ Example 3:
     Input: s = "a"
     Output: "a"
 
+Example 4:
+    Input: s = "ac"
+    Output: "a"
 """
