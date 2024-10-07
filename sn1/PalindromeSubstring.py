@@ -18,4 +18,8 @@ Example 3:
 Example 4:
     Input: s = "ac"
     Output: "a"
+
+Example 5:
+    1 <= s.length <= 1000
+    s consist of only digits and English letters (lower-case and/or upper-case)
 """
