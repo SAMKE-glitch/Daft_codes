@@ -35,3 +35,8 @@ class Solution:
             for start_index in range(0, len(s)+1-length):
                 if check_palin(s[start_index:(start_inex+length)]):
                     return s[start_index:(start_index+length)]
+
+sam = Solution()
+Input = "babad"
+result = sam.longestPalindrome(Input)
+print(result)
