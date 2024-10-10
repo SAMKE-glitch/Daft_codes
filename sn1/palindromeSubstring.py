@@ -30,6 +30,7 @@ class Solution:
             return(s == s[::-1])
         
         # Grow from center substrings
+        biggest = s[0]
 
         # check all substrings
 
