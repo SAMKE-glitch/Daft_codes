@@ -28,6 +28,8 @@ class Solution:
 
         def check_palin(s):
             return(s == s[::-1])
+        
+        # Grow from center substrings
 
         # check all substrings
 
@@ -35,6 +37,7 @@ class Solution:
             for start_index in range(0, len(s)+1-length):
                 if check_palin(s[start_index:(start_index+length)]):
                     return s[start_index:(start_index+length)]
+
 
 sam = Solution()
 Input = "babad"
