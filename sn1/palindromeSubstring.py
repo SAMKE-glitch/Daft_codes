@@ -31,6 +31,10 @@ class Solution:
         
         # Grow from center substrings
         biggest = s[0]
+        step = len(biggest)//2
+
+        # Hnadle single letter centers
+        for center in range(1, len(s)-1):
 
         # check all substrings
 
