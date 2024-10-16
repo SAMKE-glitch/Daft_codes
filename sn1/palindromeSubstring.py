@@ -46,6 +46,8 @@ class Solution:
                     break
         
         # Handle double letters centers
+        for center in range(step, len(s)-step-1):
+            bounds = [center-(step), center+(1+step)]
 
         # check all substrings
 
