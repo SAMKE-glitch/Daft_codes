@@ -33,7 +33,7 @@ class Solution:
         biggest = s[0]
         step = len(biggest)//2
 
-        # Hnadle single letter centers
+        # Handle single letter centers
         for center in range(1, len(s)-1):
             bounds = [center-(1+step), center+(1+step)]
             while (bounds[0] > -1) and (bounds[1] < len(s)):
