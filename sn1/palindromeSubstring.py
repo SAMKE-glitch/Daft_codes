@@ -44,6 +44,8 @@ class Solution:
                     bounds[1] += 1
                 else:
                     break
+        
+        # Handle double letters centers
 
         # check all substrings
 
