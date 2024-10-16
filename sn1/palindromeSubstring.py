@@ -54,6 +54,8 @@ class Solution:
                     step = len(biggest)//2
                     bounds[0] -= 1
                     bounds[1] += 1
+                else:
+                    break
 
         # check all substrings
 
