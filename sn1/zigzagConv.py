@@ -2,8 +2,8 @@
 """
 The string "PAYPALISHIRING" is written in a zigzag patter on a given number of rows
 like this: (you may want to display this patter in a fixed font for better legibility)
-P   A
-A P L
-Y   I
+P   A   H   N
+A P L S I I G
+Y   I   R
 """
 
