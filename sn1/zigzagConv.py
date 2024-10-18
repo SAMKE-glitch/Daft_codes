@@ -23,5 +23,9 @@ Example 2:
     A  LS  I G
     Y A H R
     P   I
+
+Example 3:
+    Input: s = "A", numRows = 1
+    Output: "A"
 """
 
