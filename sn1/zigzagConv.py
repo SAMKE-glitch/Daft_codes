@@ -9,5 +9,15 @@ Y   I   R
 And then read line by line "PAHNAPLSIIGYIR"
 Write the code that will take a string and make this conversion given a number of rows:
     string convert(string s, int numRows);
+
+Example 1:
+    Input s = "PAYPALISHIRING", numRows = 4
+    Output: "PINALSIGYAHRPI"
+    Explantion:
+    
+    P   I    N
+    A  LS  I G
+    Y A H R
+    P   I
 """
 
