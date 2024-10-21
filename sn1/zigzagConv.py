@@ -33,4 +33,8 @@ Constraints:
     -> s consists of English letters (lower-case and upper-case), ',' and '.'
     -> 1 <= numRows <= 1000
 """
-
+class Solutiom:
+    def convert(self, s:str, numRows: int) -> str:
+        # handle if the number of rows equal 1
+        if numRows == 1:
+            return s
