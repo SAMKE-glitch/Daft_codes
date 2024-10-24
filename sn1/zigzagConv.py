@@ -55,3 +55,7 @@ class Solutiom:
             else:
                 row -= 1
                 up = False
+        converted = ""
+        # loop through the numRows in the dictionary
+        for row in range(1, numRows+1):
+            converted += row_map[row]
