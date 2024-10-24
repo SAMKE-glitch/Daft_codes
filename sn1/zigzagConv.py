@@ -49,5 +49,6 @@ class Solutiom:
 
         for letter in s:
             row_map[row] += letter
-            row += 1
-            up = True
+            if (row == 1) or ((row < numRows) and up):
+                row += 1
+                up = True
