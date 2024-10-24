@@ -43,3 +43,6 @@ class Solutiom:
 
         # declare the row that will start looking at
         row = 1
+
+        # we have to keep in track if we are currently up or down in the zigzag
+        up = True
