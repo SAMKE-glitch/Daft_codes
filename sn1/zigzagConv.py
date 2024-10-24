@@ -40,3 +40,6 @@ class Solutiom:
             return s
         # declaring the dictionary with row numbers being as keys
         row_map = {row:"" for row in range(1, numRows+1)}
+
+        # declare the row that will start looking at
+        row = 1
