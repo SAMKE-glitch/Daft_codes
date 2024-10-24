@@ -46,3 +46,8 @@ class Solutiom:
 
         # we have to keep in track if we are currently up or down in the zigzag
         up = True
+
+        for letter in s:
+            row_map[row] += letter
+            row += 1
+            up = True
