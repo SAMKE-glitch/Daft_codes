@@ -38,3 +38,5 @@ class Solutiom:
         # handle if the number of rows equal 1
         if numRows == 1:
             return s
+        # declaring the dictionary with row numbers being as keys
+        row_map = {row:"" for row in range(1, numRows+1)}
