@@ -52,3 +52,6 @@ class Solutiom:
             if (row == 1) or ((row < numRows) and up):
                 row += 1
                 up = True
+            else:
+                row -= 1
+                up = False
