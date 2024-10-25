@@ -58,7 +58,7 @@ class Solution:
                 row -= 1
                 up = False
 
-            # our converted or combined string after conversion
+        # our converted or combined string after conversion
         converted = ""
         for row in range(1, numRows+1):
             converted += map_dict[row]
