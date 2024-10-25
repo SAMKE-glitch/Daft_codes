@@ -35,6 +35,10 @@ Constraints:
 """
 class Solution:
     def convert(self, s:str, numRows: int) -> str:
+        # handling edge case where numRows = 1
+        if numRows == 1:
+            return s
+
 
 sam = Solution()
 string = "PAYPALISHIRING"
