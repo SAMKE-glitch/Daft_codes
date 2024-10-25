@@ -39,6 +39,31 @@ class Solution:
         if numRows == 1:
             return s
 
+        # we need to declare a dict variable to hold num of rows togehter with their strings
+        map_dict = {row:"" for row in range(1, numRows+1)}
+
+        # variable to update us which row we are
+        row = 1
+
+        # variable to show us whether we are going up or down it has to be a boolean
+        up = True
+
+        for letter in s:
+            map_dict[row] += letter
+            # check if row < numRows and up = True or 
+            if (row == 1) or ((row < numRows) and up):
+                row += 1
+                up = True
+            else:
+                row -= 1
+                up = False
+
+            # our converted or combined string after conversion
+        converted = ""
+        for row in range(1, numRows+1):
+            converted += map_dict[row]
+        return converted
+
 
 sam = Solution()
 string = "PAYPALISHIRING"
