@@ -35,31 +35,6 @@ Constraints:
 """
 class Solution:
     def convert(self, s:str, numRows: int) -> str:
-        # handle if the number of rows equal 1
-        if numRows == 1:
-            return s
-        # declaring the dictionary with row numbers being as keys
-        row_map = {row:"" for row in range(1, numRows+1)}
-
-        # declare the row that will start looking at
-        row = 1
-
-        # we have to keep in track if we are currently up or down in the zigzag
-        up = True
-
-        for letter in s:
-            row_map[row] += letter
-            if (row == 1) or ((row < numRows) and up):
-                row += 1
-                up = True
-            else:
-                row -= 1
-                up = False
-        converted = ""
-        # loop through the numRows in the dictionary
-        for row in range(1, numRows+1):
-            converted += row_map[row]
-        return converted
 
 sam = Solution()
 string = "PAYPALISHIRING"
