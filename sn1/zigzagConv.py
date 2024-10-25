@@ -59,3 +59,4 @@ class Solutiom:
         # loop through the numRows in the dictionary
         for row in range(1, numRows+1):
             converted += row_map[row]
+        return converted
