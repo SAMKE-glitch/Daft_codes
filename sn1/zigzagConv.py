@@ -60,3 +60,8 @@ class Solutiom:
         for row in range(1, numRows+1):
             converted += row_map[row]
         return converted
+
+sam = Solution()
+string = "PAYPALISHIRING"
+numrows = 3
+result = sam.convert(string, numrows)
