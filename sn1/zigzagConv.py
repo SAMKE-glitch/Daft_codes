@@ -65,3 +65,4 @@ sam = Solution()
 string = "PAYPALISHIRING"
 numrows = 3
 result = sam.convert(string, numrows)
+print(result)
