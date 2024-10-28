@@ -39,7 +39,7 @@ class Solution:
         rev_digit = 0
 
         while x > 0:
-            rev_digit = rev_digit * 10 + x % 10 # Extract the last digit of x and add it
+            rev_digit = rev_digit * 10 + x % 10 # Extract the last digit of x and add it to rev_digit
             x //= 10 # Remove the last digit from x
         return original == rev_digit
 
