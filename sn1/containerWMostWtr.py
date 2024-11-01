@@ -28,7 +28,7 @@ class Solution:
             if height[start] < height[end]:
                 start += 1
             else:
-                end += 1
+                end -= 1
         return largest
 
 sam = Solution()
