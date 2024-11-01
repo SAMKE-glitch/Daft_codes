@@ -13,4 +13,10 @@ from typing import List
 
 
 class Solution:
-    def maxArea(self, height: List[int]) -> int: 
+    def maxArea(self, height: List[int]) -> int:
+        # variable to hold the first index
+        start = 0
+        # variable to hold the last index
+        end = len(height) - 1
+        largest = 0
+
