@@ -11,5 +11,5 @@ C       100
 D       500
 M       1000
 
-For example, 2
+For example, 2 is written as II in Roman numeral, just two one's added together
 """
