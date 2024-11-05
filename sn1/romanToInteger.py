@@ -11,5 +11,7 @@ C       100
 D       500
 M       1000
 
-For example, 2 is written as II in Roman numeral, just two one's added together
+For example, 2 is written as II in Roman numeral, just two one's added together.
+12 is written as XII, which is simply X + II. The number 27 is written as XXVII,
+which is XX +V + II.
 """
