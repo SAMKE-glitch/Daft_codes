@@ -78,6 +78,6 @@ class Solution:
 
 
 sam = Solution()
-Input = "LVIII"
+Input = "MCMXCIV"
 result = sam.romanToInt(Input)
 print(result)
