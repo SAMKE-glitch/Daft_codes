@@ -63,7 +63,21 @@ class Solution:
             "D": 500,
             "M": 1000
         }
-        print(roman_table["I"])
+        
+        # reverse iteration
+        num = 0 # parameter to store the total number
+        last = "I" # we initiate this variable to store the lowest value
 
-solution = Solution()
-solution.romanToInt("I")
+        for numeral in s[::-1]:
+            if roman_table[numeral] < roman_table[last]:
+                num -= roman_table[numeral]
+            else:
+                num += roman_table[numeral]
+            last = numeral
+        return num
+
+
+sam = Solution()
+Input = "LVIII"
+result = sam.romanToInt(Input)
+print(result)
