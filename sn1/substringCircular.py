@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 def solution(s: str) -> int:
     n = len(s)
     circular_s = s + s  # Concatenate the string with itself to handle circular substrings
