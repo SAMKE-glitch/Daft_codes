@@ -68,13 +68,14 @@ class Solution:
         num = 0 # parameter to store the total number
         last = "I" # we initiate this variable to store the lowest value
 
+        # iterate the loop in reverse i.e from the last to the fast roman value
         for numeral in s[::-1]:
+            
+            # check if the current value is less than the last we checked
             if roman_table[numeral] < roman_table[last]:
                 num -= roman_table[numeral]
             else:
-                num += roman_table[numeral]
-            last = numeral
-        return num
+                num +=
 
 
 sam = Solution()
