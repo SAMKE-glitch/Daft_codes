@@ -75,7 +75,11 @@ class Solution:
             if roman_table[numeral] < roman_table[last]:
                 num -= roman_table[numeral]
             else:
-                num +=
+                num += roman_table[numeral]
+            
+            # update the last parameter and set it to the numeral we jsut saw
+            last = numeral
+        return num
 
 
 sam = Solution()
