@@ -63,8 +63,11 @@ class Solution:
             "D": 500,
             "M": 1000
         }
+
+        # string conversion soultion
         
         # reverse iteration
+
         num = 0 # parameter to store the total number
         last = "I" # we initiate this variable to store the lowest value
 
