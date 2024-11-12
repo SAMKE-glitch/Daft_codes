@@ -67,6 +67,13 @@ class Solution:
         # string conversion soultion method
         convert = {"IV": "IIII", "IX": "VIIII", "XL": "XXXX",
                     "XC": "LXXXX", "CD": "CCCC", "CM": "DCCCC"}
+
+        # replace the instance of roman numbers in s with key and value in convert
+        for k, v in convert.keys():
+            s = s.replace(k,v)
+
+        # we need to return the sum of the values in s
+        return sum([roman_table[numeral] for numeral in s])
         
         # reverse iteration
 
