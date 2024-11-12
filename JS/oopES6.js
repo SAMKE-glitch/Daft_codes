@@ -11,4 +11,5 @@ class Rectangle {
 	}
 };
 
+export default Rectangle
 let myRectangle = new Rectangle(10, 5)
