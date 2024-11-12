@@ -77,7 +77,7 @@ class Solution:
         
         # reverse iteration
 
-        """num = 0 # parameter to store the total number
+        num = 0 # parameter to store the total number
         last = "I" # we initiate this variable to store the lowest value
 
         # iterate the loop in reverse i.e from the last to the fast roman value
@@ -92,7 +92,6 @@ class Solution:
             # update the last parameter and set it to the numeral we jsut saw
             last = numeral
         return num
-        """
 
 
 sam = Solution()
