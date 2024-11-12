@@ -69,7 +69,7 @@ class Solution:
                     "XC": "LXXXX", "CD": "CCCC", "CM": "DCCCC"}
 
         # replace the instance of roman numbers in s with key and value in convert
-        for k, v in convert.keys():
+        for k, v in convert.items():
             s = s.replace(k,v)
 
         # we need to return the sum of the values in s
@@ -77,7 +77,7 @@ class Solution:
         
         # reverse iteration
 
-        num = 0 # parameter to store the total number
+        """num = 0 # parameter to store the total number
         last = "I" # we initiate this variable to store the lowest value
 
         # iterate the loop in reverse i.e from the last to the fast roman value
@@ -92,6 +92,7 @@ class Solution:
             # update the last parameter and set it to the numeral we jsut saw
             last = numeral
         return num
+        """
 
 
 sam = Solution()
