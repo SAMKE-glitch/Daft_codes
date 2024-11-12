@@ -64,7 +64,9 @@ class Solution:
             "M": 1000
         }
 
-        # string conversion soultion
+        # string conversion soultion method
+        convert = {"IV": "IIII", "IX": "VIIII", "XL": "XXXX",
+                    "XC": "LXXXX", "CD": "CCCC", "CM": "DCCCC"}
         
         # reverse iteration
 
