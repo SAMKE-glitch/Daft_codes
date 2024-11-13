@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-import Rectangle from './sqOop.js';
+import Rectangle from './oopES6.js';
 
 class Square extends Rectangle {
 	constructor(height, width){
