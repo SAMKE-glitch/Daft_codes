@@ -23,3 +23,21 @@ class Solution:
             return ""
         if len(strs) == 1:
             return strs[0]
+
+        # we need to check the shortest string in strs that we can use to compare with other strings
+        compare_str = min(strs, key=len)
+
+        # we iterate through the index and character in ther compare_str
+        for i, char in enumerate(compare_str):
+
+            # iterate through each string in the list strs
+            for string in strs:
+
+                # check if the character in characters in string is the same as to that of compare_str
+                if string[i] != char:
+                    return compare_str
+
+sam = Solution()
+Input = ["flower", "flow", "flight"]
+result = sam.longestCommonPrefix(Input)
+print(result)
