@@ -36,8 +36,12 @@ class Solution:
             for string in strs:
 
                 # check if the character in characters in string is the same as to that of compare_str
-                if string[i] != compare_str[:i]:
-                    return compare_str
+                if string[i] != char:
+
+                    # return the string excluding the i character
+                    return compare_str[:i]
+        return compare_str
+
 
 sam = Solution()
 Input = ["flower", "flow", "flight"]
