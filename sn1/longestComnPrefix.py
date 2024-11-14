@@ -26,6 +26,22 @@ class Solution:
         if len(strs) == 1:
             return strs[0]
 
+        # Prefix method solution
+        pref = strs[0]
+        plen = len(pref)
+
+        # iterate through other strings
+        for s in strs[1:]:
+
+            # we check or compare if s and the pref
+            while pref != s[0:plen]:
+                pref = pref[0: (plen - 1)]
+                plen -= 1
+
+                if plen == 0:
+                    return ""
+        return pref
+
         # we need to check the shortest string in strs that we can use to compare with other strings
         compare_str = min(strs, key=len)
 
