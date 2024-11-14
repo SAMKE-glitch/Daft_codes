@@ -17,3 +17,9 @@ Example 2:
 Note:
     All given inputs are in lowercase letters a-z
 """
+class Solution:
+    def longestCommonPrefix(self, strs:List[str]) -> str:
+        if len(strs) == 0:
+            return ""
+        if len(strs) == 1:
+            return strs[0]
