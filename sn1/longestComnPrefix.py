@@ -36,7 +36,7 @@ class Solution:
             for string in strs:
 
                 # check if the character in characters in string is the same as to that of compare_str
-                if string[i] != char:
+                if string[i] != compare_str[:i]:
                     return compare_str
 
 sam = Solution()
