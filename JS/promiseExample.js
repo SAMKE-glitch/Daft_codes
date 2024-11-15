@@ -13,11 +13,12 @@ let promiseArgument = (resolve, reject) => {
 
 let myPromise = new Promise(promiseArgument)
 
-(async () => {
+(async function handlePromise () {
 	try {
 		let result = await myPromise;
 		console.log("Promis resolved with:", result);
 	} catch (error) {
 		console.error("Promise rejected with:", error);
 	}
-})();
+}
+handlePromise();
