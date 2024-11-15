@@ -13,7 +13,7 @@ let promiseArgument = (resolve, reject) => {
 
 let myPromise = new Promise(promiseArgument)
 
-(async function handlePromise () {
+async function handlePromise () {
 	try {
 		let result = await myPromise;
 		console.log("Promis resolved with:", result);
