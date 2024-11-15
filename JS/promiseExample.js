@@ -12,3 +12,12 @@ let promiseArgument = (resolve, reject) => {
 };
 
 let myPromise = new Promise(promiseArgument)
+
+(async () => {
+	try {
+		let result = await myPromise;
+		console.log("Promis resolved with:", result);
+	} catch (error) {
+		console.error("Promise rejected with:", error);
+	}
+})();
