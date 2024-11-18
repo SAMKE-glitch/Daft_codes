@@ -21,3 +21,7 @@ Constraints:
     0 <= nums.length <= 3000
     -10^5 <= nums[i] <= 10^5
 """
+class Solution:
+    def threeSum(self, nums: List[int]) -> List[List[int]]:
+
+        # n^3 Triple for loop solution
