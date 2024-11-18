@@ -12,4 +12,11 @@ Output: [[-1,-1,2], [-1,0,1]]
 Example 2:
     Input: nums = []
     Output: []
+
+Example 3:
+    Input: nums = [0]
+    Output: []
+
+Constraints:
+
 """
