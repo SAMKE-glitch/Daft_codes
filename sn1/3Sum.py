@@ -26,6 +26,9 @@ from typing import List
 
 class Solution:
     def threeSum(self, nums: List[int]) -> List[List[int]]:
+        # handling edge case
+        if len(nums) < 3:
+            return []
 
         triplets = []
         # n^3 Triple for loop solution
