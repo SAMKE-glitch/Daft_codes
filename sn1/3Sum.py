@@ -24,5 +24,11 @@ Constraints:
 class Solution:
     def threeSum(self, nums: List[int]) -> List[List[int]]:
 
+        triplets = []
         # n^3 Triple for loop solution
-        nums = sorted(nums)
+        # here we need to have 3 for loops
+        for i in range(len(nums)-2):
+            for j in range(len(nums)-1):
+                for k in range(len(nums)):
+                    if nums[i] + nums[j] + nums[k] == 0:
+                        triplets.append(tuple(set(nums[i] , nums[j] , nums[k])))
