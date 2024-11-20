@@ -38,7 +38,7 @@ class Solution:
                 for k in range(j+1, len(nums)):
                     if (nums[i] + nums[j] + nums[k]) == 0:
                         triplets.append(tuple(sorted([nums[i] , nums[j] , nums[k]])))
-        return(triplets)
+        return(list(set(triplets)))
 
 sam = Solution()
 Input = [-1,0,1,2,-1,-4]
