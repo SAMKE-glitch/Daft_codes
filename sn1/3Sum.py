@@ -32,3 +32,9 @@ class Solution:
                 for k in range(len(nums)):
                     if nums[i] + nums[j] + nums[k] == 0:
                         triplets.append(tuple(set(nums[i] , nums[j] , nums[k])))
+        return(triplets)
+
+sam = Solution()
+Input = [-1,0,1,2,-1,-4]
+result = sam.threeSum(Input)
+print(result)
