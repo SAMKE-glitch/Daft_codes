@@ -27,8 +27,13 @@ class Solution:
             remainder = N - (k * (k -1 )) // 2
 
             # ensure a is an integer
-            if remainder // 2 == 0:
+            if remainder % k == 0:
                 count += 1
 
             k += 1
         return count
+
+sam = Solution()
+Input = 15
+result = sam.magicalSequence(Input)
+print(result)
