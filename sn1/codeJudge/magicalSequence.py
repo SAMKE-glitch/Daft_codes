@@ -7,3 +7,5 @@ Def magicseq(N):
 Input 15
 Output 4
 """
+class Solution:
+    def magicalSequence(self, S: int) -> int:
