@@ -23,16 +23,9 @@ class Solution:
         # basically k is the number of integers or the length of sequences like lets say 2 = [a, b] 3 = [a,b,c]
         k = 1
 
-        while k * (k -1) // 2 < N:
-            # check if there's an integer starting value `a` that works for this length `'`
-            remainder = N - (k * (k -1 )) // 2
+        # while loop to check if the sum of the differences is less than the sum N
+        while k * (k - 1) // 2 < N:
 
-            # ensure a is an integer
-            if remainder % k == 0:
-                count += 1
-
-            k += 1
-        return count
 
 sam = Solution()
 Input = 15
