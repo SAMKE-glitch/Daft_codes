@@ -20,6 +20,7 @@ class Solution:
         count = 0
 
         # Try every possible length of the sequence (k)
+        # basically k is the number of integers or the length of sequences like lets say 2 = [a, b] 3 = [a,b,c]
         k = 1
 
         while k * (k -1) // 2 < N:
