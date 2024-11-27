@@ -26,6 +26,13 @@ class Solution:
         # while loop to check if the sum of the differences is less than the sum N
         while k * (k - 1) // 2 < N:
 
+            # remainder of the integers
+            remainder = N - (k * (k -1)) // 2
+            if remainder % k == 0:
+                count += 1
+            k += 1
+        return count
+
 
 sam = Solution()
 Input = 15
