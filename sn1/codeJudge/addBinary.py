@@ -6,3 +6,5 @@ Example:
     Input: "1010", "1101"
     Output: "10111"
 """
+class Solution:
+    def addBinary(self, a:str, b:str) -> str:
