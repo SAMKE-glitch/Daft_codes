@@ -17,3 +17,8 @@ class Solution:
 
         # convert back to binarries
         return bin(total)[2:] # Here we have the slicing because the binaries starts with 0b10101
+
+sam = Solution()
+Input = "1010", "1101"
+result = sam.addBinarry(Input)
+print(result)
