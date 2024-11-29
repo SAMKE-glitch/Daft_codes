@@ -19,10 +19,14 @@ class Solution:
         if not isinstance(number, int):
             raise ValueError("Insert integers only!!!")
         
+        # handle negative integers
+        if number < 0:
+            return "-" + bin(-number)[2:]
+        
         # return the converted number and sliced to remove the "ob" from "ob10111"
         return bin(number)[2:]
 
 sam = Solution()
-Input = 23
+Input = -23
 result = sam.integerToBinary(Input)
 print(result)
