@@ -8,7 +8,7 @@ Example:
 """
 
 class Solution:
-    integerToBinary(self, number:int) -> str:
+    def integerToBinary(self, number:int) -> str:
         """
         method to convert integer to binary
         Input:
@@ -21,3 +21,8 @@ class Solution:
         
         # return the converted number and sliced to remove the "ob" from "ob10111"
         return bin(number)[2:]
+
+sam = Solution()
+Input = 23
+result = sam.integerToBinary(Input)
+print(result)
