@@ -14,11 +14,13 @@ class Solution:
         bin2 = int(b, 2)
 
         total = bin1 + bin2
+        print(total)
 
         # convert back to binarries
         return bin(total)[2:] # Here we have the slicing because the binaries starts with 0b10101
 
 sam = Solution()
-Input = "1010", "1101"
-result = sam.addBinarry(Input)
+Inputa = "1010"
+Inputb = "1101"
+result = sam.addBinary(Inputa, Inputb)
 print(result)
