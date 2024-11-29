@@ -8,6 +8,9 @@ Example:
 """
 class Solution:
     def addBinary(self, a:str, b:str) -> str:
+
+        if not (a.isdigit() and b.isdigit() and set(a) <= {"0", "1"} and set(b) <= {"0", "1"}):
+            raise ValueError("insert binaries only!!")
         # convert the binary to integer for easy adding
         # using base 2, because binaries are in base 2
         bin1 = int(a, 2)
