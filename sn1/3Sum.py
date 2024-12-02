@@ -31,6 +31,9 @@ class Solution:
             return []
 
         triplets = []
+        # Other solution(Efficient one)
+        # [-3,-1,-1,0,1,2,5]
+
         # n^3 Triple for loop solution
         # here we need to have 3 for loops
         for i in range(0, len(nums)-2):
