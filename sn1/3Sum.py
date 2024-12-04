@@ -34,6 +34,9 @@ class Solution:
         # Other solution(Efficient one)
         # [-3,-1,-1,0,1,2,5]
 
+
+        # after iterating check whether at that position adds to zero
+
         # Sorted inout
         nums = sorted(nums)
 
