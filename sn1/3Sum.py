@@ -38,9 +38,9 @@ class Solution:
 
 
 
-        # after iterating check whether at that position adds to zero
 
-        # 
+        # after iterating check whether at that position adds to zero
+        # Looping all numbers atleast once
 
         # Sorted inout
         nums = sorted(nums)
