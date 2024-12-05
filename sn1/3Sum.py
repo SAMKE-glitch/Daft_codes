@@ -53,6 +53,13 @@ class Solution:
                 # check if the sum s is equal to zero
                 if s == 0:
                     triplets.append((nums[i], nums[lower], nums[upper]))
+                # if sum s is less than 0 then we increase/shift the lower
+                elif s < 0:
+                    lower += 1
+                
+                # if sum is greater than 0 then we shift the upper to the left or lower
+                elif s > 0:
+                    upper -= 1
 
         # n^3 Triple for loop solution
         # here we need to have 3 for loops
