@@ -47,6 +47,13 @@ class Solution:
             # while loop to always make sure that lower doesn't meet upper
             while lower < upper:
 
+                # Here we declare a  variable sum to check the i, lower and upper 
+                s = nums[i] + nums[lower] + nums[upper]
+
+                # check if the sum s is equal to zero
+                if s == 0:
+                    triplets.append((nums[i], nums[lower], nums[upper]))
+
         # n^3 Triple for loop solution
         # here we need to have 3 for loops
         for i in range(0, len(nums)-2):
