@@ -44,6 +44,9 @@ class Solution:
             # upper pointer
             upper = len(nums)-1
 
+            # while loop to always make sure that lower doesn't meet upper
+            while lower < upper:
+
         # n^3 Triple for loop solution
         # here we need to have 3 for loops
         for i in range(0, len(nums)-2):
