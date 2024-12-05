@@ -34,15 +34,8 @@ class Solution:
         # Other solution(Efficient one)
         # [-3,-1,-1,0,1,2,5]
 
-        # sorting the input array before we start traversing on it
 
-
-
-
-        # after iterating check whether at that position adds to zero
-        # Looping all numbers atleast once
-
-        # Sorted inout
+        # Sorted input
         nums = sorted(nums)
 
         # n^3 Triple for loop solution
