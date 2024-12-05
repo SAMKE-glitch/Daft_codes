@@ -57,6 +57,7 @@ class Solution:
                 # if sum s is less than 0 then we increase/shift the lower
                 elif s < 0:
                     lower += 1
+        return(list(set(triplets)))
                 
                 # if sum is greater than 0 then we shift the upper to the left or lower
                 elif s > 0:
