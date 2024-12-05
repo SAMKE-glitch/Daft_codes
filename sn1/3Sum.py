@@ -31,12 +31,10 @@ class Solution:
             return []
 
         triplets = []
-        # Other solution(Efficient one)
-        # [-3,-1,-1,0,1,2,5]
-
+        # Other solution(Efficient one n^2 solution)
 
         # Sorted input
-        nums = sorted(nums)
+        nums = sorted(nums) # [-3,-1,-1,0,1,2,5]
 
         # n^3 Triple for loop solution
         # here we need to have 3 for loops
