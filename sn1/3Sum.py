@@ -53,6 +53,7 @@ class Solution:
                 # check if the sum s is equal to zero
                 if s == 0:
                     triplets.append((nums[i], nums[lower], nums[upper]))
+                    lower += 1
                 # if sum s is less than 0 then we increase/shift the lower
                 elif s < 0:
                     lower += 1
