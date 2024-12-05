@@ -36,6 +36,14 @@ class Solution:
         # Sorted input
         nums = sorted(nums) # [-3,-1,-1,0,1,2,5]
 
+        # looping the list/array
+        for i in range(0, len(nums)-2):
+            # lower pointer
+            lower = i+1
+
+            # upper pointer
+            upper = len(nums)-1
+
         # n^3 Triple for loop solution
         # here we need to have 3 for loops
         for i in range(0, len(nums)-2):
