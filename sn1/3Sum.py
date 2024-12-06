@@ -62,6 +62,7 @@ class Solution:
                 elif s > 0:
                     upper -= 1
         # returning after removal of the duplicates using the set() then converting back to a list
+        # bwcause the set() method returns a tuple
         return(list(set(triplets)))
 
         # n^3 Triple for loop solution
