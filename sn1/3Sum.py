@@ -61,6 +61,7 @@ class Solution:
                 # if sum is greater than 0 then we shift the upper to the left or lower
                 elif s > 0:
                     upper -= 1
+        # returning after removal of the duplicates using the set() then converting back to a list
         return(list(set(triplets)))
 
         # n^3 Triple for loop solution
