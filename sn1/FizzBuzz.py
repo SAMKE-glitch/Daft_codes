@@ -14,3 +14,8 @@ class Solution:
             else:
                 print("{}".format(i))
 
+
+sam = Solution()
+Input = 30
+result = sam.fizzBuzz(Input)
+print(result)
