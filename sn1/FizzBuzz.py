@@ -11,3 +11,6 @@ class Solution:
                 print("Fuzz")
             elif i % 5 == 0 and i % 3 != 0:
                 print("Buzz")
+            else:
+                print("{}".format(i))
+
