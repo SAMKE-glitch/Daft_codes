@@ -42,8 +42,8 @@ class Solution:
             if nums[i] > 0:
                 break
 
-            # if the lower pointer is the same as the previous lower pointer
-            if nums[i] == nums[i - 1]:
+            # if the outer pointer is the same as the previous outer pointer
+            if nums[i] == nums[i - 1] and i > 0:
                 continue
 
             # lower pointer
@@ -61,10 +61,12 @@ class Solution:
                 # check if the sum s is equal to zero
                 if s == 0:
                     triplets.append((nums[i], nums[lower], nums[upper]))
-                    lower += 1
                 # if sum s is less than 0 then we increase/shift the lower
-                elif s < 0:
+                elif s <= 0:
                     lower += 1
+                    # handling the lower pointer
+                    while(nums[lower] == nums[lower-1] and lower < upper):
+                        lower += 1
                 
                 # if sum is greater than 0 then we shift the upper to the left or lower
                 elif s > 0:
