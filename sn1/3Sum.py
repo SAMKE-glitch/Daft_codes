@@ -38,6 +38,8 @@ class Solution:
 
         # looping the list/array
         for i in range(0, len(nums)-2):
+            if nums[i] > 0:
+                break
             # lower pointer
             lower = i+1
 
