@@ -38,8 +38,14 @@ class Solution:
 
         # looping the list/array
         for i in range(0, len(nums)-2):
+            # if the first digit in our list is greater than zero
             if nums[i] > 0:
                 break
+
+            # if the lower pointer is the same as the previous lower pointer
+            if nums[i] == nums[i - 1]:
+                continue
+
             # lower pointer
             lower = i+1
 
