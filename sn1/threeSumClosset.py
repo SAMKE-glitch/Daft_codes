@@ -27,5 +27,11 @@ class Solution:
         for i in range(0, len(nums)-2):
             if nums[i] == nums[i-1] and i > 0:
                 continue
+
             lower = i+1
             upper = len(nums)-1
+
+            while lower < upper:
+                s = nums[i] + nums[lower] + nums[upper]
+                if s == target:
+                    return s
