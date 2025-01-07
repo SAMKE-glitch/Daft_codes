@@ -12,5 +12,20 @@ Example 1:
 Constraints:
     3 <= nums.length <= 10^3
     -10^3 <= nums[i] <= 10^3
-    -10^3 <= target <= 10^4.
+    -10^4 <= target <= 10^4.
 """
+from typing import List
+
+
+class Solution:
+    def ThreeSumClosest(self, nums:List[int], target:int) -> int:
+        # so we need to sort the array in order to avoid a for loop on n^3
+        nums.sort()
+
+        best_sum = 10000
+
+        for i in range(0, len(nums)-2):
+            if nums[i] == nums[i-1] and i > 0:
+                continue
+            lower = i+1
+            upper = len(nums)-1
