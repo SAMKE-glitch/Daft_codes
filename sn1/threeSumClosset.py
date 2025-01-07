@@ -35,3 +35,13 @@ class Solution:
                 s = nums[i] + nums[lower] + nums[upper]
                 if s == target:
                     return s
+
+                if abs(target - s) < abs(target - best_sum):
+                    best_sum = s
+                if s <= target:
+                    lower += 1
+                    while nums[lower] == nums[lower-1] and lower < upper:
+                        lower += 1
+                if s > target:
+                    upper -= 1
+        return best_sum
