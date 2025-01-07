@@ -7,5 +7,10 @@ that each input would have exactly one solution
 Example 1:
     Input: nums = {-1, 2, 1, -4}, target = 1
     Output: 2
-    Explanation: The sum that is closest to the target is 2. {-1 + 2 + 1 = 2}.
+    Explanation: The sum that is closest to the target is 2. {-1 + 2 + 1 = 2}
+
+Constraints:
+    3 <= nums.length <= 10^3
+    -10^3 <= nums[i] <= 10^3
+    -10^3 <= target <= 10^4.
 """
