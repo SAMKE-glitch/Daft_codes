@@ -47,7 +47,7 @@ class Solution:
         return best_sum
 
 sam = Solution()
-numz = {-1, 2, 1, -4}
+numz = [-1, 2, 1, -4]
 trgt = 1
 result = sam.ThreeSumClosest(numz, trgt)
 print(result)
