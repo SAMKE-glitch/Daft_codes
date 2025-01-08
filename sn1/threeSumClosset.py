@@ -45,3 +45,9 @@ class Solution:
                 if s > target:
                     upper -= 1
         return best_sum
+
+sam = Solution()
+numz = {-1, 2, 1, -4}
+trgt = 1
+result = sam.ThreeSumClosest(numz, trgt)
+print(result)
