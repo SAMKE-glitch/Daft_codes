@@ -24,3 +24,45 @@ Requirements:
     5. Handle cases where no path exists between the start and end rooms.
     6. Ensure the solution works efficiently for large numbers of rooms and connections.
 """
+
+
+from collections import deque, defaultdict
+
+def find_shortest_path(room_connections, start_room, end_room):
+    # Step 1: Parse connections into a graph
+    graph = defaultdict(list)
+    for connection in room_connections:
+        room_a, room_b = connection.split('-')
+        graph[room_a].append(room_b)
+        graph[room_b].append(room_a)
+    
+    # Step 2: Perform BFS
+    queue = deque([(start_room, [start_room])])
+    visited = set()
+    
+    while queue:
+        current_room, path = queue.popleft()
+        
+        if current_room == end_room:
+            return path  # Shortest path found
+        
+        if current_room not in visited:
+            visited.add(current_room)
+            for neighbor in graph[current_room]:
+                if neighbor not in visited:
+                    queue.append((neighbor, path + [neighbor]))
+    
+    # Step 3: If no path exists
+    return []
+
+# Example usage:
+connections = ['Kitchen-LivingRoom', 'Bedroom-Bathroom', 'LivingRoom-Bedroom']
+start = 'Kitchen'
+end = 'Bathroom'
+print(find_shortest_path(connections, start, end))  # Output: ['Kitchen', 'LivingRoom', 'Bedroom', 'Bathroom']
+
+connections2 = ['Study-Library', 'Kitchen-DiningRoom', 'Garden-Garage']
+start2 = 'Study'
+end2 = 'Garden'
+print(find_shortest_path(connections2, start2, end2))  # Output: []
+
