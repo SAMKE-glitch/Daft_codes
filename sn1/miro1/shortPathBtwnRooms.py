@@ -16,4 +16,11 @@ Example 2:
     Output: []
     Explanation: There is no path connecting Study to Garden, so an empty list is returned.
 
+Requirements:
+    1. Implement a function that takes the list of room connections, start room, and end room as input.
+    2. Use an appropriate data structure to represent the room graph.
+    3. Implement a breadth-first search (BFS) algorithm to find the shortest path.
+    4. Return the shortest path as a list of room names, including start and end rooms.
+    5. Handle cases where no path exists between the start and end rooms.
+    6. Ensure the solution works efficiently for large numbers of rooms and connections.
 """
