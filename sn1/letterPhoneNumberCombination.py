@@ -12,4 +12,8 @@ Example 1:
 Example 2:
     Input: digits = "2"
     Output: ['a', 'b', 'c']
+
+Example 3:
+    Input: digits = ""
+    Output: []
 """
