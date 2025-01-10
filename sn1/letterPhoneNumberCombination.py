@@ -16,4 +16,8 @@ Example 2:
 Example 3:
     Input: digits = ""
     Output: []
+
+Constraints:
+    0 <= digits.length <= 4
+    digits[i] is a digit in the range ['2', '9']
 """
