@@ -40,13 +40,13 @@ class Solution:
         numbers = list(phone_map[digits[0]])
 
         for digit in digits[1:]:
-            numbers = [old+new for old in numbers new in list(phone_map[digit])]
+            numbers = [old+new for old in numbers for new in list(phone_map[digit])]
         return numbers
 
 
 
 sam = Solution()
-digits = "23"
+digits = "79"
 result = sam.letterCombinations(digits)
 print(result)
 
