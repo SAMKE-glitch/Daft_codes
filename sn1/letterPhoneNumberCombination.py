@@ -26,3 +26,9 @@ from typing import List
 
 class Solution:
     def letterCombinations(self, digits:str) -> List[str]:
+        phone_digit = {'2': 'abc', '3': 'def', '4': 'fgh', '5': 'ijk',
+                        '6': 'mno', '7': 'pqrx', '8': 'tuv', '9': 'wxyz'}
+
+        # so we need a double for loop to achieve this
+        # example "23"
+        # we need to extract the value of the key in phone_digits and make it a list
