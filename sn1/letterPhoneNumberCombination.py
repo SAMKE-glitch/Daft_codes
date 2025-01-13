@@ -43,3 +43,10 @@ class Solution:
             numbers = [old+new for old in numbers new in list(phone_map[digit])]
         return numbers
 
+
+
+sam = Solution()
+digits = "23"
+result = sam.letterCombinations(digits)
+print(result)
+
