@@ -26,9 +26,20 @@ from typing import List
 
 class Solution:
     def letterCombinations(self, digits:str) -> List[str]:
-        phone_digit = {'2': 'abc', '3': 'def', '4': 'fgh', '5': 'ijk',
-                        '6': 'mno', '7': 'pqrx', '8': 'tuv', '9': 'wxyz'}
+        phone_map = {'2': 'abc', '3': 'def', '4': 'fgh', '5': 'ijk',
+                       '6': 'mno', '7': 'pqrx', '8': 'tuv', '9': 'wxyz'}
 
         # so we need a double for loop to achieve this
         # example "23"
-        # we need to extract the value of the key in phone_digits and make it a list
+        # we need to extract the value of the key in phone_map and make it a list
+
+        # handle the edge case when the list is an empty string
+        if digits == "":
+            return([])
+        # extracting the number from the dictionary mapped to the digits
+        numbers = list(phone_map[digits[0]])
+
+        for digit in digits[1:]:
+            numbers = [old+new for old in numbers new in list(phone_map[digit])]
+        return numbers
+
