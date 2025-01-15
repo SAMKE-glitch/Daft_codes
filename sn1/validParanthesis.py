@@ -30,3 +30,8 @@ Constraints:
     1 <= s.length <= 10^4
     s consists of parentheses only "()[]{}"
 """
+
+
+class Solution:
+    def isValid(self, s: str) -> bool:
+
