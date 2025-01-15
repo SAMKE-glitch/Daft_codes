@@ -35,3 +35,15 @@ Constraints:
 class Solution:
     def isValid(self, s: str) -> bool:
 
+        # inner string replace method
+
+        # have a loop to keep on track if we can replace something in our string
+        # we are going to have a variable track if we're able to replace something
+        replace = True
+        while replace:
+            start_length = len(s)
+            for inner in ["()", "{}", "[]"]:
+                s = replace(inner, "")
+            if start_length = len(s):
+                replace = False
+        return s == ""
