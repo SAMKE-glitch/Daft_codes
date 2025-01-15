@@ -43,7 +43,12 @@ class Solution:
         while replace:
             start_length = len(s)
             for inner in ["()", "{}", "[]"]:
-                s = replace(inner, "")
-            if start_length = len(s):
+                s = s.replace(inner, "")
+            if start_length == len(s):
                 replace = False
         return s == ""
+
+sam = Solution()
+Input = "{[]}"
+result = sam.isValid(Input)
+print(result)
