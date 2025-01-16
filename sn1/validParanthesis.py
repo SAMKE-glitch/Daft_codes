@@ -37,6 +37,14 @@ class Solution:
 
         # close the last seen opening symbol method O(n) w/ stack
         close_map = {"(":")", "{":"}", "[":"]"}
+        opens = []
+
+        for symbol in s:
+            if symbol in close_map.keys():
+                opens.append(symbol)
+            elif opens == [] or symbol != close_map[opens.pop()]:
+                return False
+        return opens == []
 
 
         # inner string replace method
