@@ -35,6 +35,9 @@ Constraints:
 class Solution:
     def isValid(self, s: str) -> bool:
 
+        # close the last seen opening symbol method O(n)
+
+
         # inner string replace method
 
         # have a loop to keep on track if we can replace something in our string
