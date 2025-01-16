@@ -35,7 +35,8 @@ Constraints:
 class Solution:
     def isValid(self, s: str) -> bool:
 
-        # close the last seen opening symbol method O(n)
+        # close the last seen opening symbol method O(n) w/ stack
+        close_map = {"(":")", "{":"}", "[":"]"}
 
 
         # inner string replace method
