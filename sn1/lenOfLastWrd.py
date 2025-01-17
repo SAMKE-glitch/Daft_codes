@@ -9,4 +9,8 @@ A WORD is a maximal substring consisting of non-space characters only.
 Example 1:
     Input: s = "Hello World"
     Output: 5
+
+Example 2:
+    Input: s = " "
+    Output: 5
 """
