@@ -22,6 +22,16 @@ Constraints:
 
 class Solution:
     def lengthOfLastWord(self, s:str) -> int:
+
+        # method 2: a fast one for manual counting the string's last word
+        count = 0
+
+        for letter in s[::-1]:
+            if letter is not " ":
+                count += 1
+            elif
+            return count
+        return count
         # method 1: using python string manipulation method split method
         if s.split():
             return len(s.split()[-1])
