@@ -28,4 +28,7 @@ class Solution:
         return 0
 
 
-
+sam = Solution()
+Input = "Hello World"
+result = sam.lengthOfLastWord(Input)
+print(result)
