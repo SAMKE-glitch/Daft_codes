@@ -28,7 +28,7 @@ class Solution:
 
         for letter in s[::-1]:
             if letter == " ":
-                if count >=1:
+                if count >= 1:
                     return count
             else:
                 count += 1
