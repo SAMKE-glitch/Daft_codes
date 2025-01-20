@@ -18,3 +18,8 @@ Constraints:
     1 <= s.length <= 10^4
     s consists of only English letters and spaces ' '.
 """
+
+
+class Solution:
+    def lengthOfLastWord(self, s:str) -> int:
+
