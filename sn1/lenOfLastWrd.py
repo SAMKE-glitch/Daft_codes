@@ -27,10 +27,11 @@ class Solution:
         count = 0
 
         for letter in s[::-1]:
-            if letter is not " ":
+            if letter == " ":
+                if count >=1:
+                    return count
+            else:
                 count += 1
-            elif
-            return count
         return count
         # method 1: using python string manipulation method split method
         if s.split():
