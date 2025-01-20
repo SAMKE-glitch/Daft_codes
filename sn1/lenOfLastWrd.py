@@ -22,4 +22,10 @@ Constraints:
 
 class Solution:
     def lengthOfLastWord(self, s:str) -> int:
+        # method 1: using python string manipulation method split method
+        if s.split():
+            return len(s.split()[-1])
+        return 0
+
+
 
