@@ -23,3 +23,9 @@ Constraints:
     1 <= digits.length <= 100
     0 <= digits[i] <= 9
 """
+from typing import List
+
+
+class Solution:
+    def plusOne(self, digits:List[int]) -> List:
+
