@@ -28,9 +28,8 @@ from typing import List
 
 class Solution:
     def plusOne(self, digits:List[int]) -> List:
-
         # we have to convert the list of integers to string and then join them to one string
-       return [int(x) for x in str(int("".join([str(i) for i in digits])) + 1)]
+        return [int(x) for x in str(int("".join([str(i) for i in digits])) + 1)]
 
 
 sam = Solution()
