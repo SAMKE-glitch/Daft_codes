@@ -28,6 +28,20 @@ from typing import List
 
 class Solution:
     def plusOne(self, digits:List[int]) -> List:
+        # solution 2
+        n = len(digits)
+
+        for i in range(n -1, -1, -1):
+            if digits[i] < 9:
+                digits[i] = digits[i+1]
+                return digits
+            else:
+                digits[i] = 0
+        return [1] + digits
+
+
+
+
         # we have to convert the list of integers to string and then join them to one string
         return [int(x) for x in str(int("".join([str(i) for i in digits])) + 1)]
 
