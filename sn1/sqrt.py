@@ -15,3 +15,8 @@ Example 2:
                 is truncated, 2 is returned
 """
 
+
+
+class Solution:
+    def sqrt(self, x:int) -> int:
+
