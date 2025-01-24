@@ -17,9 +17,16 @@ Example 2:
 Constraints:
     0 <= x <= 2^31 - 1
 """
-
+from math import sqrt
 
 
 class Solution:
     def sqrt(self, x:int) -> int:
+        # using the sqrt function
+        return int(sqrt(x))
 
+
+sam = Solution()
+Input = 4
+result = sam.sqrt(4)
+print(result)
