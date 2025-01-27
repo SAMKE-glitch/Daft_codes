@@ -18,12 +18,18 @@ Constraints:
     0 <= x <= 2^31 - 1
 """
 from math import sqrt
-
+from cmath import sqrt
 
 class Solution:
     def sqrt(self, x:int) -> int:
+        # A way to  handle both negative and positive numbers
+
+        if x < 0:
+            return cmath.sqrt(x)
+        else:
+            return math.sqrt(x)
         # using exponentiation solution
-        returnint(int( x**(1/2)))
+        return int(int( x**(1/2)))
 
 
 
