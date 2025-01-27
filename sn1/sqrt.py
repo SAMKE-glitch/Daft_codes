@@ -39,5 +39,5 @@ class Solution:
 
 sam = Solution()
 Input = -4
-result = sam.sqrt(4)
+result = sam.sqrt(Input)
 print(result)
