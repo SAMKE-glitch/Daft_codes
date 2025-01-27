@@ -23,6 +23,7 @@ from math import sqrt
 class Solution:
     def sqrt(self, x:int) -> int:
         # using exponentiation solution
+        returnint(int( x**(1/2)))
 
 
 
