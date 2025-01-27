@@ -38,6 +38,6 @@ class Solution:
 
 
 sam = Solution()
-Input = 4
+Input = -4
 result = sam.sqrt(4)
 print(result)
