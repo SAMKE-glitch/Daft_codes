@@ -17,8 +17,8 @@ Example 2:
 Constraints:
     0 <= x <= 2^31 - 1
 """
-from math import sqrt
-from cmath import sqrt
+from math 
+from cmath
 
 class Solution:
     def sqrt(self, x:int) -> int:
