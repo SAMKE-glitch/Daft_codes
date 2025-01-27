@@ -22,6 +22,10 @@ from math import sqrt
 
 class Solution:
     def sqrt(self, x:int) -> int:
+        # using exponentiation solution
+
+
+
         # using the sqrt function
         return int(sqrt(x))
 
