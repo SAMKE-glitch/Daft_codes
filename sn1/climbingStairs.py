@@ -30,7 +30,7 @@ class Solution:
         # dictionary to store key and value
         path = {1:1, 2:2, 3:3}
         for x in range(4, n+1):
-            path[x] = path[x-1] = path[x-2]
+            path[x] = path[x-1] + path[x-2]
         return(path[n])
 
 sam = Solution()
