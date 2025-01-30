@@ -23,3 +23,7 @@ Example 2:
 Constraints:
     1 <= n <= 45
 """
+
+
+class Solution:
+    def climbStairs(self, n: int) -> int:
