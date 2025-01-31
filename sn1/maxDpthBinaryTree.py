@@ -8,4 +8,6 @@ Note: A leaf is a node with no children
 
 Example:
     Given binary tree [2,9, null, null, 15, 7]
+
+    return its depth = 3
 """
