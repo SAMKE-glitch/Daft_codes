@@ -11,3 +11,8 @@ Example:
 
     return its depth = 3
 """
+
+
+class Solution:
+    def maxDepth(self, root:TreeNode) -> int:
+
