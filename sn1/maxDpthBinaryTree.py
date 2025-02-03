@@ -29,8 +29,8 @@ class Solution:
 
 root = TreeNode(2)
 root.left = TreeNode(9)
-root.left.right = TreeNode(15)
-root.left.right.left = TreeNode(7)
+root.right = TreeNode(15)
+root.right.left = TreeNode(7)
 
 
 sam = Solution()
