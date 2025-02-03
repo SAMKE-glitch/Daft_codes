@@ -26,7 +26,13 @@ class Solution:
             return 0
         return(1 + max(self.maxDepth(root.left), self.maxDepth(root.right)))
 
+
+root = TreeNode(2)
+root.left = TreeNode(9)
+root.left.right = TreeNode(15)
+root.left.right.left = TreeNode(7)
+
+
 sam = Solution()
-Input = [2,9, null, null, 15, 7]
-result = sam.maxDepth(Input)
+result = sam.maxDepth(root)
 print(result)
