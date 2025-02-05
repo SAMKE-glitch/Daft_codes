@@ -26,3 +26,7 @@ class Solution:
             result ^= num
         return result
 
+sam = Solution()
+Input = [4,1,2,1,2]
+result = sam.singleNumber(Input)
+print(result)
