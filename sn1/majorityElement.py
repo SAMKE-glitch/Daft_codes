@@ -17,6 +17,7 @@ from typing import List
 
 class Solution:
     def majorityElement(self, nums: List[int]) -> int:
+        # solution 2 1 one line solution
         # creates a dictionary that is going to loop through nums
         sums = {}
         for n in nums:
