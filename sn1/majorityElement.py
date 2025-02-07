@@ -17,7 +17,8 @@ from typing import List
 
 class Solution:
     def majorityElement(self, nums: List[int]) -> int:
-        # solution 2 1 one line solution
+        # solution 2 1 one line solutio asuuming the ,majority sits at the midle when sorted
+        return sorted(nums)[len(nums)//2]
         # creates a dictionary that is going to loop through nums
         sums = {}
         for n in nums:
