@@ -26,3 +26,8 @@ class Solution:
                 sums[n] += 1
             if sums[n] > len(nums)/2:
                 return(n)
+
+sam = Solution()
+Input = [3,2,3]
+result = sam.majorityElement(Input)
+print(result)
