@@ -26,3 +26,8 @@ Example 3:
 Note:
     0 <= N <= 30
 '''
+
+
+class Solution:
+    def fib(self, N: int) -> int:
+
