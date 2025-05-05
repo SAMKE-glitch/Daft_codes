@@ -30,6 +30,16 @@ Note:
 
 class Solution:
     def fib(self, N: int) -> int:
+        # Dictionary solution
+        seenDict = {0:0, 1:1}
+
+        for i in range(2, N+1):
+            seenDict[i] = seenDict[i-1] + seenDict[i-2]
+        return(seenDict[N])
+        
+        
+
+        # Recursive Solution
         if N == 0:
             return 0
         if N == 1:
