@@ -15,17 +15,19 @@ from typing import List
 
 class Solution:
     def moveZeroes(self, nums: List[int]) -> None:
-        no_of_zeroes = c=nums.count(0)
+        no_of_zeroes = nums.count(0)
         not_zeroes_position = 0
 
         for i in nums:
             if i != 0:
-                nums[i-1] = i
+                nums[not_zeroes_position] = i
                 not_zeroes_position +=1
 
-        for zero in range(1, len(no_of_zeroes)+1):
+        for zero in range(1, no_of_zeroes+1):
             nums[-zero] = 0
 
 
 samke = Solution()
 Input = [0,1,0,3,12]
+samke.moveZeroes(Input)
+print(Input)
