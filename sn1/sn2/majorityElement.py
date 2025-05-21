@@ -16,4 +16,4 @@ from typing import List
 
 
 class Solution:
-    def majorityElement(self, nums: List[int]) -> None:
+    def majorityElement(self, nums: List[int]) -> int:
