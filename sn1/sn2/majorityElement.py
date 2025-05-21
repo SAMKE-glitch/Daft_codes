@@ -17,3 +17,12 @@ from typing import List
 
 class Solution:
     def majorityElement(self, nums: List[int]) -> int:
+        # create an empty dictionary
+        sums = {}
+
+        # loop through the nums
+        for n in nums:
+            if n not in sums:
+                sums[n] = 1
+            else:
+                sums[n] +=1
