@@ -17,6 +17,11 @@ from typing import List
 
 class Solution:
     def majorityElement(self, nums: List[int]) -> int:
+        # Solution 1:
+        # sorting the array and returning the middle digit
+
+        return sorted(nums)[len(nums)//2]
+        # SOLUTION 2:
         # create an empty dictionary
         sums = {}
 
