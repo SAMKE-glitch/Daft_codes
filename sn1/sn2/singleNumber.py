@@ -26,7 +26,7 @@ class Solution:
             if num not in sums:
                 sums[num] = 1
             else:
-                del(sums[num] )
+                del(sums[num])
         return list(sums.keys())[0]
 
 samke = Solution()
