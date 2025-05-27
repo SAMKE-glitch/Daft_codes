@@ -19,4 +19,12 @@ from typing import List
 
 
 class Solution:
-    def singleNumber(self, List[int]) -> int:
+    def singleNumber(self, nums: List[int]) -> int:
+        sums = {}
+
+        for num in nums:
+            if num not in sums:
+                sums[num] += 1
+            else:
+                del(sums[num])
+        return list(sums.keys())
