@@ -28,3 +28,8 @@ class Solution:
             else:
                 del(sums[num])
         return list(sums.keys())
+
+samke = Solution()
+Input = [2, 2, 1]
+result = samke.singleNumber(Input)
+print(result)
