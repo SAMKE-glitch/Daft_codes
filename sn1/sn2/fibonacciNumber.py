@@ -2,7 +2,7 @@
 """
 The Fibonacci numbers, commonly denoted F(n) form a sequence, called
 Fibonacci sequence, such that each number is the sum of the two preceding ones,
-starting from0 and 1.
+starting from 0 and 1.
 That is,
     F(0) = 0, F(1) = 1
     F(N) = F(N - 1) + F(N - 2), for N > 1.
@@ -26,3 +26,17 @@ Example 3:
 NOTE:
     0 <= N <= 30
 """
+
+
+class Solution:
+    def fib(self, N: int) -> int:
+        if N == 0:
+            return 0
+        if N == 1:
+            return 1
+        return(self.fib(N-1) + self.fib(N-2))
+
+samke = Solution()
+Input = 4
+result = samke.fib(Input)
+print(result)
