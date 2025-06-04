@@ -29,6 +29,7 @@ NOTE:
 
 
 class Solution:
+    @staticmethod
     def fib(self, N: int) -> int:
 
         # Recursion solution
@@ -36,9 +37,8 @@ class Solution:
             return 0
         if N == 1:
             return 1
-        return(self.fib(N-1) + self.fib(N-2))
+        return(Solution.fib(N-1) + Solution.fib(N-2))
 
-samke = Solution()
-Input = 4
-result = samke.fib(Input)
+
+result = Solution.fib(Input)
 print(result)
