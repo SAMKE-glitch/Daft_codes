@@ -11,7 +11,7 @@ Note:
     1. You must do this in-place without making a copy of the array.
     2. Minimize the total number of operations
 """
-import typing
+from typing import List
 
 class Solution:
     def moveZeroes(self, nums: List[int]) -> None:
@@ -28,11 +28,11 @@ class Solution:
                 nums[next_non_zero] = num
                 next_non_zero += 1
 
-            for zero in range(1, zero_count + 1):
-                nums[-zero] = 0
+        for zero in range(1, zero_count + 1):
+            nums[-zero] = 0
 
 samke = Solution()
 Input = [0,1,0,3,12]
-result = samke.moveZeroes(Input)
-print(result)
+samke.moveZeroes(Input)
+print(Input)
 
