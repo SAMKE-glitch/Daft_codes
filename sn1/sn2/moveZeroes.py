@@ -19,3 +19,20 @@ class Solution:
         Do not return anythin,
         modify nums in-place instead.
         """
+        zero_count = nums.count(0)
+
+        next_non_zero = 0
+
+        for num in nums:
+            if num != 0:
+                nums[next_non_zero] = num
+                next_non_zero += 1
+
+            for zero in range(1, zero_count + 1):
+                nums[-zero] = 0
+
+samke = Solution()
+Input = [0,1,0,3,12]
+result = samke.moveZeroes(Input)
+print(result)
+
