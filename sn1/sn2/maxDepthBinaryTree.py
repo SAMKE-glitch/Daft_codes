@@ -22,3 +22,7 @@ class TreeNode:
 
 class Solution:
     def maxDepth(self, root: TreeNode) -> int:
+        # If we are given an emoty root node then our return is zero
+        if not root:
+            return 0
+        return(1 + max(self.maxDepth(root.left), self.maxDepth(root.right)))
