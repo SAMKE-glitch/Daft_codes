@@ -12,4 +12,12 @@ Example 1:
 
     1. 1 step + 1 step
     2. 2 steps
+
+Example 2:
+    Input: 3
+    Output: 3
+    Explanation: There are three ways to climb to the top.
+    1. 1 step + 1 step + 1 step
+    2. 1 step + 2 step
+    3. 2 step + 1 step
 """
