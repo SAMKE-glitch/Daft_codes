@@ -20,4 +20,7 @@ Example 2:
     1. 1 step + 1 step + 1 step
     2. 1 step + 2 step
     3. 2 step + 1 step
+
+Constraints:
+    1 <= n <= 45
 """
