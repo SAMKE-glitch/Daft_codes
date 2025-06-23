@@ -37,3 +37,9 @@ class Solution:
         for i in range(3, n+1):
             a, b = b, a+b
         return b
+
+
+samke = Solution()
+Input = 5
+result = samke.climbStairs(Input)
+print(result)
