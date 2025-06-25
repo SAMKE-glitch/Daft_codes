@@ -23,6 +23,11 @@ from math import sqrt
 
 class Solution:
     def mySqrt(self, x: int) -> int:
+
+        # exponent solution
+        return int(x**(1/2))
+
+
         # import solution
         return sqrt(x)
 samke = Solution()
