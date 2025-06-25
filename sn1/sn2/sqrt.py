@@ -27,4 +27,5 @@ class Solution:
         return sqrt(x)
 samke = Solution()
 Input = 8
-
+result = samke.mySqrt(Input)
+print(result)
