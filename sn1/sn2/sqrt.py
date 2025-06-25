@@ -16,3 +16,15 @@ Example 2:
 Constraints:
     0 <= x <= 2^31 -1
 """
+
+
+from math import sqrt
+
+
+class Solution:
+    def mySqrt(self, x: int) -> int:
+        # import solution
+        return sqrt(x)
+samke = Solution()
+Input = 8
+
