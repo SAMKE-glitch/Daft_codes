@@ -14,7 +14,7 @@ Example 1:
 
 Example 2:
     Input: digits = [4, 3, 2, 1]
-    Output: [4, 3, 2, 1]
+    Output: [4, 3, 2, 2]
     Explanation: The array represents the integer 4321
 
 Example 3:
@@ -32,3 +32,9 @@ class Solution:
     def plusOne(self, digits: List[int]) -> List[int]:
         # Convoluted solution
        return [int(x) for x in str(int("".join([str(i) for i in digits])) + 1)]
+
+
+samke = Solution()
+Input = [4, 3, 2, 1]
+result = samke.plusOne(Input)
+print(result)
