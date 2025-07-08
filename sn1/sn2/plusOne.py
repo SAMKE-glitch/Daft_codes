@@ -32,6 +32,9 @@ class Solution:
     def plusOne(self, digits: List[int]) -> List[int]:
 
         # Method 2: Reverse list addition
+        for i in range(len(digits)-1, -1, -1):
+
+
 
         # Method 1: Convoluted solution
        return [int(x) for x in str(int("".join([str(i) for i in digits])) + 1)]
