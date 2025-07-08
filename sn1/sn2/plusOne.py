@@ -30,7 +30,10 @@ from typing import List
 
 class Solution:
     def plusOne(self, digits: List[int]) -> List[int]:
-        # Convoluted solution
+
+        # Method 2: Reverse list addition
+
+        # Method 1: Convoluted solution
        return [int(x) for x in str(int("".join([str(i) for i in digits])) + 1)]
 
 
