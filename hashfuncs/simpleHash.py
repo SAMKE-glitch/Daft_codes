@@ -10,3 +10,7 @@ class Solution:
 
         # We limit our hash range from 0 to 9
         return summation % 10
+
+
+samke = Solution()
+print(samke.simpleHash("Hello"))
