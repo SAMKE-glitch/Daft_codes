@@ -33,11 +33,11 @@ class Solution:
 
         # Method 2: Reverse list addition
         for i in range(len(digits)-1, -1, -1):
-            if i < 9:
-                digits[i] += 1
-                return digits
-            else:
+            if digits[i] == 9:
                 digits[i] = 0
+            else:
+                digits[i] += 1
+                return(digits)
         return [1] + digits
 
 
