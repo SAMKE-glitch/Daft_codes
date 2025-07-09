@@ -33,11 +33,16 @@ class Solution:
 
         # Method 2: Reverse list addition
         for i in range(len(digits)-1, -1, -1):
-
+            if i < 9:
+                digits[i] += 1
+                return digits
+            else:
+                digits[i] = 0
+        return [1] + digits
 
 
         # Method 1: Convoluted solution
-       return [int(x) for x in str(int("".join([str(i) for i in digits])) + 1)]
+        return [int(x) for x in str(int("".join([str(i) for i in digits])) + 1)]
 
 
 samke = Solution()
