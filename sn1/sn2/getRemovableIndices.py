@@ -23,18 +23,18 @@ class Solution:
             return[-1]
         
         # Step 2: Store valid indices where a char can be removed
-        removableIndeces = []
+        removableIndices = []
 
         # Step 3: Try removing each character one-by-one
         for i in range(len(str1)):
             newStr = str1[:i] + str1[i+1:]
             
             if newStr == str2:
-                removableIndeces.append(i)
+                removableIndices.append(i)
 
         # Step 4: Return result list, or [-1] if empty
 
-        if len(removableIndeces) > 0:
-            return(removableIndeces)
+        if len(removableIndices) > 0:
+            return(removableIndices)
         else:
             return([-1])
