@@ -33,8 +33,4 @@ class Solution:
                 removableIndices.append(i)
 
         # Step 4: Return result list, or [-1] if empty
-
-        if len(removableIndices) > 0:
-            return(removableIndices)
-        else:
-            return([-1])
+        return removableIndices if removableIndices else [-1]
