@@ -34,3 +34,9 @@ class Solution:
 
         # Step 4: Return result list, or [-1] if empty
         return removableIndices if removableIndices else [-1]
+
+samke = Solution()
+str1 = "abdgggda"
+str2 = "abdggda"
+result = samke.getRemovableIndices(str1, str2)
+print(result)
