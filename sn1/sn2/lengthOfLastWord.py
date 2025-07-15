@@ -19,6 +19,19 @@ Constraints:
 """
 class Solution:
     def lengthOfLastWord(self, s: str) -> int:
+        # Method 2: manual string legnth count
+
+        count = 0
+
+        for letter in s[::-1]:
+            if letter == " ":
+                if count >= 0:
+                    return count
+            else:
+                count += 1
+        return count
+
+
         # Method 1: String split version
         if s.split():
             return len(s.split()[-1])
