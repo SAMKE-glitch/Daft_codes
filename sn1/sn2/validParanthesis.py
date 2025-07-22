@@ -30,3 +30,5 @@ Constraints:
     1 <= s.length <= 10^4
     s consists of paranetheses only '()[]{}'
 """
+class Solution:
+    def
