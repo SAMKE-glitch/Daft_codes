@@ -31,4 +31,5 @@ Constraints:
     s consists of paranetheses only '()[]{}'
 """
 class Solution:
-    def
+    def isValid(self, s: str) -> bool:
+
