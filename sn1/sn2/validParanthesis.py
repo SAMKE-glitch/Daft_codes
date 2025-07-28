@@ -42,3 +42,9 @@ class Solution:
             if startLength == len(s):
                 replace = False
         return s == ""
+
+
+samke = Solution()
+Input = "()"
+result = samke.isValid(Input)
+print(result)
