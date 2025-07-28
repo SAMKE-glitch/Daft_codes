@@ -32,6 +32,20 @@ Constraints:
 """
 class Solution:
     def isValid(self, s: str) -> bool:
+        # Close the last seen opening symbol w/ stack
+        close_map = {"(":")", "{":"}", "[":"]"}
+
+        opens = []
+
+        for symbol in s:
+            if symbol in close_map.keys():
+                opens.append(symbol)
+            elif opens == [] or symbol != close_map[opens.pop()]:
+                return False
+        return opens == []
+
+
+
         # Inner string replace method
         replace = True
 
