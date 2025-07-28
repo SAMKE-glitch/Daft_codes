@@ -32,4 +32,13 @@ Constraints:
 """
 class Solution:
     def isValid(self, s: str) -> bool:
+        # Inner string replace method
+        replace = True
 
+        while replace:
+            startLength = len(s)
+            for inner in ["{}", "()", "[]"]:
+                s = s.replace(inner , "")
+            if startLength == len(s):
+                replace = False
+        return s == ""
