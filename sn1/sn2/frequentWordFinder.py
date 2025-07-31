@@ -17,3 +17,8 @@ class Solution:
         topThree = sorted(wordCounts.items(), key=lambda x: x[1], reverse=True)[:3]
         return topThree
 
+
+samke = Solution()
+Input = "Apple banana apple fruit banana apple"
+result = samke.frequentWordsFinder(Input)
+print(result)
