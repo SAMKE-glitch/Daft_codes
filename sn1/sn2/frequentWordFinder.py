@@ -3,10 +3,10 @@
 Let's start with an interesting task. Imagine being asked to construct a simple word frequency analyzer. Given a large body of text, we need to identify the three most frequently occurring words. Imagine working with large documents, such as news articles, thesis manuscripts, or even books. Identifying the most common words could give us an overview of the main themes or topics in the text.
 """
 from collections import defaultdict
-
+from typing import List
 
 class Solution:
-    def frequentWordsFinder(self, text:str) -> int:
+    def frequentWordsFinder(self, text:str) -> list[tuple[str, int]]:
         text =text.lower()
 
         wordCounts = defaultdict(int)
