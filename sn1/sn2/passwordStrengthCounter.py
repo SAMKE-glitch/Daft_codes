@@ -32,3 +32,9 @@ class Solution:
             return 'Moderate'
         else:
             return 'Weak'
+
+if __name__ == "__main__":
+    s = Solution()
+    print(s.passwordStrengthCounter("P4ssword"))  # Strong
+    print(s.passwordStrengthCounter("password"))  # Weak
+    print(s.passwordStrengthCounter("Pass12"))    # Moderate
