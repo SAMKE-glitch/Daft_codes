@@ -5,7 +5,7 @@ As an application developer, ensuring the security of user data is pivotal. A co
 
 
 class Solution:
-    def passwordStrengthCounter(self, password:str) -> bool:
+    def passwordStrengthCounter(self, password:str) -> str:
         strength = {
             'length': False,
             'digit': False,
@@ -20,9 +20,9 @@ class Solution:
             if char.isdigit():
                 strength['digit'] = True
             elif char.islower():
-                strength['lowercase'] : True
+                strength['lowercase'] = True
             elif char.isupper():
-                strength['uppercase']: True
+                strength['uppercase'] = True
 
         score = sum(strength.values())
 
