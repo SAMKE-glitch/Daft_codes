@@ -9,4 +9,12 @@ from collections import defaultdict
 
 class Solution:
     def rare_words_finder(self, text: str) -> List[Tuple[str, int]]:
+        text = text.lower()
 
+        count_words = defaultdict(int)
+        words_list = text.split()
+
+        for word in word_list:
+            count_words[word] += 1
+        least_five = sorted(count_words.items(), key=lambda x:x[1])[:5]
+        return least_five
