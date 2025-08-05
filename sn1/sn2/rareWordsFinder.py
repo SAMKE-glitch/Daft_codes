@@ -15,7 +15,7 @@ class Solution:
         count_words = defaultdict(int)
         words_list = text.split()
 
-        for word in word_list:
+        for word in words_list:
             count_words[word] += 1
         least_five = sorted(count_words.items(), key=lambda x:x[1])[:5]
         return least_five
