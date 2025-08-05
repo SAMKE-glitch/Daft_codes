@@ -6,9 +6,10 @@ Assume there is no punctuation. In case there is a tie,
 simply return words in the order they are stored in your dictionary, don't worry about ties!
 """
 from collections import defaultdict
+from typing import List
 
 class Solution:
-    def rare_words_finder(self, text: str) -> List[Tuple[str, int]]:
+    def rare_words_finder(self, text: str) -> List[tuple[str, int]]:
         text = text.lower()
 
         count_words = defaultdict(int)
@@ -18,3 +19,6 @@ class Solution:
             count_words[word] += 1
         least_five = sorted(count_words.items(), key=lambda x:x[1])[:5]
         return least_five
+
+samke = Solution()
+print(samke.rare_words_finder("Hey there hot shot Are you ready for a challenge This might be trickier than it looks"))
