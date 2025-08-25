@@ -30,3 +30,5 @@ samke = Solution()
 Input = ["password", "Pa$$w0rd", "SuperSecurePwd!", "weakpw"]
 result = samke.multi_password_strength_counter(Input)
 print(result)
+for pwd, res in zip(Input, result):
+    print(f"{pwd:20} → {res}")
