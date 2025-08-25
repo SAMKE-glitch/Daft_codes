@@ -25,3 +25,8 @@ class Solution:
             results.append(strength)
 
         return results
+
+samke = Solution()
+Input = ["password", "Pa$$w0rd", "SuperSecurePwd!", "weakpw"]
+result = samke.multi_password_strength_counter(Input)
+print(result)
