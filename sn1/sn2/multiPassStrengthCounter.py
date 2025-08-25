@@ -9,18 +9,18 @@ Get ready to dive into the world of security analysis – this is where the real
 from typing import List
 
 class Solution:
-    def multi_password_strength_counter(self, password: List[str]) -> List[dict]:
+    def multi_password_strength_counter(self, passwords: List[str]) -> List[dict]:
         special_characters = "!@#$%^&*()-+"
 
         results = []
 
         for pwd in passwords:
-            stength = {
-                "length": len(pwd) >= 8
-                "digit": any(ch.isdigit() for ch in pwd)
-                "lowercase": any(ch.islower() for ch in pwd)
-                "uppercase": any(ch.isupper() for ch in pwd)
-                "special_char": any(ch in special_char)
+            strength = {
+                "length": len(pwd) >= 8,
+                "digit": any(ch.isdigit() for ch in pwd),
+                "lowercase": any(ch.islower() for ch in pwd),
+                "uppercase": any(ch.isupper() for ch in pwd),
+                "special_char": any(ch in special_characters for ch in pwd)
             }
             results.append(strength)
 
