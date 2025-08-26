@@ -11,7 +11,7 @@ from typing import List, Dict, Any
 
 
 class Solution:
-    def salary_increment(self, employees: List[Dict[str, Any]]) -> List[Dict[st, Any]]:
+    def salary_increment(self, employees: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
         updated_employees = copy.deepcopy(employees)
 
         for employee in updated_employees:
