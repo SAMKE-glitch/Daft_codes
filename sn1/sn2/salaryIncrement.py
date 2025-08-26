@@ -18,3 +18,13 @@ class Solution:
             if employee.get('role', '').lower() == 'developer':
                 employee['salary'] *= 1.15
         return updated_employees
+
+samke = Solution()
+Input = [
+    {"name": "Alice", "role": "developer", "salary": 60000},
+    {"name": "Bob", "role": "designer", "salary": 50000},
+    {"name": "Charlie", "role": "developer", "salary": 70000},
+]
+
+result = samke.salary_increment(Input)
+print(result)
