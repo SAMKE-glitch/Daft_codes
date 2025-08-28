@@ -16,3 +16,9 @@ class Solution:
                 else:
                     index[word] = [doc_idx]
         return index
+
+
+samke = Solution()
+Input = ["hello world", "world of python"]
+result = samke.keyword_index(Input)
+print(result)
