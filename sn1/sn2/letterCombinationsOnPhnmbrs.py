@@ -37,3 +37,9 @@ class Solution:
         for digit in digits[1:]:
             numbers = [old+new for old in numbers for new in list(phone_map[digit])]
         return numbers
+
+
+samke = Solution()
+Input = "23"
+result = samke.letterCombinations(Input)
+print(result)
