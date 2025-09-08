@@ -10,3 +10,16 @@ The votes are delivered to you in list format. As an illustration, [1, 2, 3, 3, 
 
 Your end goal is to return the lucky candidate's ID if they secure a seat on the board. If no one qualifies, return -1. Got it, superstar? Now it's time to put your coding prowess to the test and sort out this corporate election pronto!
 """
+from typing import List
+
+
+
+class Solution:
+    def elect_board_member(self, votes: List[int]) -> int:
+        count_dict = {}
+
+        for id_member in votes:
+            count_dict[id_member] = count_dict.get(id_member, 0) + 1
+            if count_dict[id_member] > len(votes) / 3:
+                return id_member
+        return -1
