@@ -23,3 +23,8 @@ class Solution:
             if count_dict[id_member] > len(votes) / 3:
                 return id_member
         return -1
+
+samke = Solution()
+Input = [1, 2, 3, 3, 3]
+result = samke.elect_board_member(Input)
+print(result)
