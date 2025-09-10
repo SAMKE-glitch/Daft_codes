@@ -19,6 +19,5 @@ class Solution:
 
         for doc_idx, doc in enumerate(docs):
             for word in doc.split():
-                if word in index:
-                    index[word][doc_idx] += 1
+                index[word][doc_idx] += 1
         return index
