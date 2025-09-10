@@ -14,10 +14,16 @@ from typing import List, Dict
 
 
 class Solution:
-    def kyword_index(self, docs:List[str]) -> Dict[str, Dict[int, int]]:
+    def keyword_index(self, docs:List[str]) -> Dict[str, Dict[int, int]]:
         index = defaultdict(lambda: defaultdict(int))
 
         for doc_idx, doc in enumerate(docs):
             for word in doc.split():
                 index[word][doc_idx] += 1
         return index
+
+
+samke = Solution()
+docs = ["The fox jumps", "The dog sleeps"]
+result = samke.keyword_index(docs)
+print(result)
