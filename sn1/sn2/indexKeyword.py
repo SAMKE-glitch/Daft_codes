@@ -20,7 +20,8 @@ class Solution:
         for doc_idx, doc in enumerate(docs):
             for word in doc.split():
                 index[word][doc_idx] += 1
-        return index
+        #return index
+        return {word: dict(counts) for word, counts in index.items()}
 
 
 samke = Solution()
