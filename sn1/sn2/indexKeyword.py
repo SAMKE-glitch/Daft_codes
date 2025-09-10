@@ -14,4 +14,11 @@ from typing import List, Dict
 
 
 class Solution:
-    def kyword_index(self, docs:List[str]) -> Dict[str, Dict[int, int]]
+    def kyword_index(self, docs:List[str]) -> Dict[str, Dict[int, int]]:
+        index = defaultdict(lambda: defaultdict(int))
+
+        for doc_idx, doc in enumerate(docs):
+            for word in doc.split():
+                if word in index:
+                    index[word][doc_idx] += 1
+        return index
