@@ -8,3 +8,10 @@ The output should be a dictionary, where each unique word is a key, and the mapp
 
 Alright, time to hit the hyper-speed!
 """
+from collections import defaultdict
+from typing import List, Dict
+
+
+
+class Solution:
+    def kyword_index(self, docs:List[str]) -> Dict[str, Dict[int, int]]
