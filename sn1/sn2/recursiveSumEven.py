@@ -21,3 +21,9 @@ class Solution:
             return arr[idx] + self.recursiveSumEven(arr, idx+1)
         else:
             return self.recursiveSumEven(arr, idx+1)
+
+
+samke = Solution()
+Input = [1, 2, 3, 4, 5, 6]
+result = samke.recursiveSumEven(Input)
+print(result)
