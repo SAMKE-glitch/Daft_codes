@@ -48,3 +48,7 @@ class Solution:
         return(best_s)
 
 
+samke = Solution()
+Input = [-1,2,1,-4], target = 1
+result = samke.threeSumClosest(Input, target)
+print(result)
