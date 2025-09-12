@@ -13,6 +13,7 @@ Start up your thrusters, and let's see what you can do!
 
 Bonus points: Try to think about how to apply the memoization technique here to avoid recursive calculations for the same inputs.
 """
+from typing import List
 
 
 class Solution:
@@ -29,7 +30,7 @@ class Solution:
         results = []
 
         for num in nums:
-            f = factorial(num)
+            f = self.factorial(num)
 
             if f is not None:
                 results.append(f)
