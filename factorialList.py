@@ -13,3 +13,33 @@ Start up your thrusters, and let's see what you can do!
 
 Bonus points: Try to think about how to apply the memoization technique here to avoid recursive calculations for the same inputs.
 """
+
+
+class Solution:
+    def factorial(self, num) -> int:
+        if num < 0:
+            return None
+
+        if num == 0 or num == 1:
+            return 1
+        else:
+            return num * self.factorial(num - 1)
+
+    def factorials(self, nums:List[int]) -> List[int]:
+        results = []
+
+        for num in nums:
+            f = factorial(num)
+
+            if f is not None:
+                results.append(f)
+            else:
+                results.append('Error')
+        return results
+
+
+
+samke = Solution()
+print(samke.factorials([2, 3, 4]))
+print(samke.factorials([1, 5, 6]))
+print(samke.factorials([0, -3, 10]))
