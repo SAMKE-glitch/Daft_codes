@@ -24,7 +24,7 @@ class Solution:
         nums.sort()
 
         for i in range(0, len(nums)-2):
-            if num[i] == nums[i-1] and i > 0:
+            if nums[i] == nums[i-1] and i > 0:
                 continue
 
             lower = i + 1
@@ -49,6 +49,7 @@ class Solution:
 
 
 samke = Solution()
-Input = [-1,2,1,-4], target = 1
+Input = [-1,2,1,-4]
+target = 1
 result = samke.threeSumClosest(Input, target)
 print(result)
