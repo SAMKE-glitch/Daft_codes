@@ -1,4 +1,4 @@
-#!/usr/bin/ env python3
+#!/usr/bin/env python3
 """
 Function getLongestString to return longest string which matches the following conditions:
     1. The string should have non-repetitive identical characters, for example "AABCD" is not
@@ -15,17 +15,17 @@ from typing import List
 
 
 class Solution:
-    def getLongestString(characters, strings):
+    def getLongestString(self, characters: str, strings: List[str]) -> str:
 
         # HELPER FUNCTION:
+        valid_set = set(characters) # for faster lookup
 
         def is_valid(s):
-            valid_set = set(characters) # for faster lookup
+            # check only valid characters
 
-            # check only valid characters edge case
-
-            for ch not in valid_set:
-                return False
+            for ch in s:
+                if ch not in valid_set:
+                    return False
 
             # check no consecutive duplicates edge case
             for i in range(1, len(s)):
@@ -34,16 +34,16 @@ class Solution:
             return True
 
         # FILTER VALID STRINGS
-        validStrings = [s for s in strings if self.is_valid(s)]
+        validStrings = [s for s in strings if is_valid(s)]
 
         # return the longest valid string
-        if not valist_Strings:
+        if not validStrings:
             return None
-        return max(valid_strings, key=len)
+        return max(validStrings, key=len)
 
 
 samke = Solution()
 char = "ABCD"
 strings = ["AABCDA", "ABCDZADC", "ABCDBCA", "ABCDABDCA"]
-print(getLongeestString(char, strings))
+print(samke.getLongestString(char, strings))
 
