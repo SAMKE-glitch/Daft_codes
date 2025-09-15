@@ -24,5 +24,4 @@ from typing import List
 
 
 class Solution:
-    def threeSum(self, nums: List[int], target:int) -> List[int]:
-
+    def threeSum(self, nums: List[int]) -> List[List[int]]:
