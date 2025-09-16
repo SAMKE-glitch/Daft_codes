@@ -41,3 +41,9 @@ class Solution:
 
 
 samke = Solution()
+Input = [-1,0,1,2,-1,4]
+result = samke.threeSum(Input)
+print(result)
+
+
+samke = Solution()
