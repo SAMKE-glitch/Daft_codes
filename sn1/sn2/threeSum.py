@@ -29,7 +29,7 @@ class Solution:
        if len(nums) < 3:
            return([])
 
-       triptlest = []
+       triplets = []
 
 
 samke = Solution()
