@@ -37,7 +37,7 @@ class Solution:
                for k in range(j+1, len(nums)):
                    if (nums[i] + nums[j] + nums[k] == 0):
                        triplets.append(tuple(sorted([nums[i] , nums[j] , nums[k]])))
-        return(list(set(triplets)))
+       return(list(set(triplets)))
 
 
 samke = Solution()
