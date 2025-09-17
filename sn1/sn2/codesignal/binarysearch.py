@@ -28,7 +28,7 @@ class Solution:
         return low if data[low] == target else None
 
     def search_price(self, customer_query: int) -> int:
-        result = self.binary_search_iterative(products_price, customer_query)
+        result = self.binary_search_iterative(self.products_price, customer_query)
 
         if result is not None:
             print(f"Product of price ${customer_query} is found at position {result} in the price list.")
