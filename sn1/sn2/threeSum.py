@@ -25,7 +25,7 @@ from typing import List
 
 class Solution:
     def threeSum(self, nums: List[int]) -> List[List[int]]:
-       # edgae case for less than 3
+       # edge case for less than 3
        if len(nums) < 3:
            return([])
 
