@@ -36,7 +36,7 @@ class Solution:
        for i in range(0, len(nums)-2):
            if nums[i] > 0:
                break
-           if nums[i] == nums[i-1]:
+           if nums[i] == nums[i-1] and i > 0:
                continue
            # Initialize our 2 pointers
            lower = i + 1
