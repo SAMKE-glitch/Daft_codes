@@ -47,9 +47,11 @@ class Solution:
 
                if s == 0:
                    triplets.append((nums[i] ,  nums[lower] , nums[upper]))
+                
+               if s <= 0:
                    lower += 1
-               elif s < 0:
-                   lower += 1
+                   while(nums[lower] == nums[lower-1] and lower < upper):
+                       lower += 1
                else:
                    upper -= 1
        return(list(set(triplets)))
