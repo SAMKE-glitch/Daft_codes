@@ -31,6 +31,27 @@ class Solution:
 
        triplets = []
 
+       # O(n^2) Solution sorting
+       nums.sort()
+
+       for i in range(0, len(nums)-2):
+           # Initialize our 2 pointers
+           lower = i + 1
+           upper = len(nums)-1
+
+           while lower < upper:
+               s = nums[i] + nums[lower] + nums[upper]
+
+               if s == 0:
+                   triplets.append(tuple(nums[i]  nums[lower] , nums[upper]))
+                   lower += 1
+                elif if s < 0:
+                    lower += 1
+                else:
+                    upper -= 1
+
+        return(list(set(triplets)))
+
        # n^3 Triple for lopp solution
        for i in range(0, len(nums)-2):
            for j in range(i+1, len(nums)-1):
