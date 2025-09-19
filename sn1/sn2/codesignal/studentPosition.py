@@ -28,6 +28,6 @@ class Solution:
 
 samke = Solution()
 Input = 75
-result = samke.binary_search(grades, Input)
+result = samke.binary_search(samke.grades, Input)
 print(result)
 
