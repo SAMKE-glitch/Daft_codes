@@ -12,3 +12,22 @@ from typing import List
 class Solution:
     grades = [35, 42, 45, 50, 55, 60, 65, 70, 75, 80, 85, 90, 95]
 
+    def binary_search(self, grades:List[int], target:int) -> int:
+        low = 0
+        high = len(grades)
+
+        while high - low > 1:
+            mid = (high + low) // 2
+
+            if target < grades[mid]:
+                high = mid
+            else:
+                low = mid
+        return low if grades[low] == target else None
+
+
+samke = Solution()
+Input = 75
+result = samke.binary_search(grades, Input)
+print(result)
+
