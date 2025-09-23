@@ -19,4 +19,6 @@ from typing import List
 
 class Solution:
     def longestCommonPrefix(self, strs:List[str]) -> str:
-
+        # handling when the strs is empty
+        if len(strs) == 0:
+            return("")
