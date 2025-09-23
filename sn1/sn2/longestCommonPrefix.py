@@ -22,3 +22,7 @@ class Solution:
         # handling when the strs is empty
         if len(strs) == 0:
             return("")
+
+        # handling when length is one
+        if len(strs) == 1:
+            return(strs[0])
