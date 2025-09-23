@@ -14,3 +14,9 @@ Example 2:
 
 Note: All given inputs are in lowercase letters a-z
 """
+from typing import List
+
+
+class Solution:
+    def longestCommonPrefix(self, strs:List[str]) -> str:
+
