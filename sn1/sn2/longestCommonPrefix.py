@@ -26,3 +26,8 @@ class Solution:
         # handling when length is one
         if len(strs) == 1:
             return(strs[0])
+
+        pref = strs[0]
+        plen = len(pref)
+
+
