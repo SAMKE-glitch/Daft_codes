@@ -38,3 +38,8 @@ class Solution:
                 if plen == 0:
                     return("")
         return pref
+
+samke = Solution()
+Input = ["flower", "flow", "flight"]
+result = samke.longestCommonPrefix(Input)
+print(result)
