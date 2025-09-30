@@ -9,4 +9,9 @@ def mainWelcome():
         print("Welcome to samke Youtube Channel")
         print(msg)
         print("Please subrscibe to Samke channel")
-    return subWelcomeClass()
+    return subWelcomeClass
+
+
+if __name__ == "__main__":
+    samke = mainWelcome()
+    samke()
