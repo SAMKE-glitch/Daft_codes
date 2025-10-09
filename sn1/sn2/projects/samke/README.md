@@ -1,1 +1,3 @@
-# First Python/Django project internshi[p
+# First Python/Django project internship
+
+# Just testing the git staging on vs code, and again
