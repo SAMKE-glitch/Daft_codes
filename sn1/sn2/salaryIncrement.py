@@ -6,25 +6,3 @@ Now, here's some technical jargon for you: the task involves iterating over a li
 
 Remember, it's important to preserve the integrity of the database and not to affect any data unrelated to the developer's salary. Best of luck, Voyager!
 """
-import copy
-from typing import List, Dict, Any
-
-
-class Solution:
-    def salary_increment(self, employees: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
-        updated_employees = copy.deepcopy(employees)
-
-        for employee in updated_employees:
-            if employee.get('role', '').lower() == 'developer':
-                employee['salary'] *= 1.15
-        return updated_employees
-
-samke = Solution()
-Input = [
-    {"name": "Alice", "role": "developer", "salary": 60000},
-    {"name": "Bob", "role": "designer", "salary": 50000},
-    {"name": "Charlie", "role": "developer", "salary": 70000},
-]
-
-result = samke.salary_increment(Input)
-print(result)
