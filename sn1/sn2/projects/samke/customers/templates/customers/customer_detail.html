@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block title %}{{ customer.name }}'s Orders{% endblock %}
+
+{% block content %}
+<h2>Orders for {{ customer.name }}</h2>
+<p><a href="{% url 'customer_list' %}">&larr; Back to Customers</a></p>
+
+<table>
+    <thead>
+        <tr>
+            <th>Product</th>
+            <th>Quantity</th>
+            <th>Date Ordered</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for order in customer.orders.all %}
+            <tr>
+                <td>{{ order.product }}</td>
+                <td>{{ order.quantity }}</td>
+                <td>{{ order.date_ordered }}</td>
+            </tr>
+        {% empty %}
+            <tr><td colspan="3">No orders found.</td></tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}
+
