@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Camera Upload{% endblock %}
+
+{% block content %}
+<h1>Camera Photo Upload</h1>
+
+<button id="openCameraBtn">Open Camera</button>
+<button id="captureBtn" disabled>Capture Photo</button>
+<button id="uploadBtn" disabled>Upload Photo</button>
+
+<br><br>
+<video id="video" style="display:none; width: 400px;"></video>
+<canvas id="canvas" style="display:none;"></canvas>
+<img id="previewImage" style="display:none; max-width: 400px;">
+<div id="status" style="margin-top:10px;">Status: Ready</div>
+
+{% endblock %}
+
+{% block extra_js %}
+<script src="{% static 'js/camera.js' %}"></script>
+{% endblock %}
+
