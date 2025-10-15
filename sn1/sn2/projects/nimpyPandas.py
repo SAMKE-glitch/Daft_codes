@@ -1,4 +1,7 @@
 #!/usr/bin/env python3
+"""
+Create a random array (with values from 0 to 1) of size (20x3), Split the array into two equal arrays 'M' and 'N', each of size (10x3), Let the instances (rows) in array 'M' be named alphabetically from 'A' to 'J' and instances in array 'N' be named alphabetically from 'Q' to 'Z'
+"""
 
 import numpy as np
 import pandas as pd
