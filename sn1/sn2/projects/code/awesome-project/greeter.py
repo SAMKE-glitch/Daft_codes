@@ -5,6 +5,6 @@ class Greeter:
     async def __call__(self):
         return("Hello, {}!".format(self.name))
 
-greet = Greet("Samke")
+greet = Greeter("Samke")
 
 print(greet())
