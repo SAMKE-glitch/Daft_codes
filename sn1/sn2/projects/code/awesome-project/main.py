@@ -1,2 +1,2 @@
 def main(name: str) -> None:
-    print(f"Hello {name}")
+    print("Hello {}".format(name))
