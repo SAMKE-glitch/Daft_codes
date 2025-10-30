@@ -1,10 +1,10 @@
 class Count:
     def __init__(self, start, end):
-        self.start = start
+        self.current = start
         self.end =  end
 
     def __iter__(self):
-        return self# This makes it an interator
+        return self # This makes it an interator
 
     def __next__(self):
         if self.current > self.end:
