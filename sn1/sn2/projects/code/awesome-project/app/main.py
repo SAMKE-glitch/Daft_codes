@@ -1,10 +1,15 @@
 from fastapi import FastAPI
 from app.controllers import item_controller
+from sqlmodel import SQLModel
+from app.dependencies.db_dependency import engine
 
 app = FastAPI(titel="Awesome Project")
 
-# Register routes (controllers)
+# Create DB tables
+SQLModel.metadata.create_all(engine)
 
+
+# Register routes (controllers)
 app.include_router(item_controller.router)
 
 """

@@ -65,9 +65,9 @@ def delete_tem(item_id: int, session: Session = Depends(get_session)):
 
 
 # Get all items (optional: for testing)
-@router.get("/items/", response+model=List[Item])
+@router.get("/items/", response_model=List[Item])
 def get_all_items(session: Session = Depends(get_session)):
-    items = Session.exec(select(Item)).all()
+    items = session.exec(select(Item)).all()
     return items
 
 
