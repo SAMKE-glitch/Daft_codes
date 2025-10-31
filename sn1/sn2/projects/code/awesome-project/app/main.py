@@ -1,22 +1,24 @@
 from fastapi import FastAPI
-from app.controllers import item_controller
 from sqlmodel import SQLModel
+from app.controllers import item_controller
 from app.dependencies.db_dependency import engine
 import socketio
 from app.sockets.socket_events import register_socket_events
 
 
 # Initialize Socket.IO server
-sio = socket.AsyncServer(async_mode="asgi", cors_allowed_origins="*")
+sio = socketio.AsyncServer(async_mode="asgi", cors_allowed_origins="*")
 
+# Initialize FastAPI app
+app = FastAPI(titel="Awesome Project with Socket.IO")
 
 # Mount FastAPI + Socket.IO together
-
-app = FastAPI(titel="Awesome Project with Socket.IO")
 app_sio = socketio.ASGIApp(sio, other_asgi_app=app)
+
+# Register all socket events
 register_socket_events(sio)
 
-# Create DB tables
+# Create DB tables (if not exist)
 SQLModel.metadata.create_all(engine)
 
 
