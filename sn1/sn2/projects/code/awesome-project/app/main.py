@@ -1,9 +1,13 @@
-from typing import Union
-from fastapi import FastAPI, Depends
-from pydantic import BaseModel
+from fastapi import FastAPI
+from app.controllers import item_controller
 
-app = FastAPI()
+app = FastAPI(titel="Awesome Project")
 
+# Register routes (controllers)
+
+app.include_router(item_controller.router)
+
+"""
 class Item(BaseModel):
     name: str
     price: float
@@ -25,4 +29,4 @@ async def read_item(item_id: int, q: Union[str, None] = None):  # ✅ fixed type
 @app.put("/items/{item_id}")
 async def update_item(item_id: int, item: Item):
     return {"item_name": item.name, "item_id": item_id}
-
+"""
