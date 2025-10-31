@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head><title>Socket.IO Test</title></head>
+  <body>
+    <h2>Socket.IO Client</h2>
+    <p>Open the browser console to see logs (Ctrl+Shift+I → Console tab)</p>
+    <script src="https://cdn.socket.io/4.7.2/socket.io.min.js"></script>
+    <script>
+      const socket = io("http://127.0.0.1:8000");
+      socket.on("connect", () => console.log("✅ Connected:", socket.id));
+      socket.on("notification", (data) => console.log("🔔 Notification:", data.message));
+      socket.emit("new_task", { title: "Learn FastAPI Sockets" });
+    </script>
+  </body>
+</html>
+

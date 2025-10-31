@@ -4,6 +4,7 @@ from app.controllers import item_controller
 from app.dependencies.db_dependency import engine
 import socketio
 from app.sockets.socket_events import register_socket_events
+from fastapi.staticfiles import StaticFiles
 
 
 # Initialize Socket.IO server
@@ -25,6 +26,11 @@ SQLModel.metadata.create_all(engine)
 # Register routes (controllers)
 app.include_router(item_controller.router)
 
+# Serve static files (frontend)
+app.mount("/socket", StaticFiles(directory="app/static", html=True), name="static")
+
+# This ensures both FastAPI & Socket.IO routes work
+app = app_sio
 """
 class Item(BaseModel):
     name: str
