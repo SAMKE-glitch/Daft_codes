@@ -47,3 +47,31 @@ awesome-project/
 
 
 ```
+
+## Updated Project Structure with Socket.IO
+```
+awesome-project/
+│
+├── app/
+│   ├── __init__.py
+│   ├── main.py                    # FastAPI entrypoint
+│   ├── controllers/
+│   │   ├── __init__.py
+│   │   └── item_controller.py
+│   ├── services/
+│   │   ├── __init__.py
+│   │   └── item_service.py
+│   ├── repositories/
+│   │   ├── __init__.py
+│   │   └── item_repository.py
+│   ├── models/
+│   │   ├── __init__.py
+│   │   └── item_model.py
+│   ├── sockets/                   # <── NEW: real-time communication handlers
+│   │   ├── __init__.py
+│   │   └── socket_events.py       # defines @sio.event functions
+│   └── dependencies/
+│       ├── __init__.py
+│       └── db_dependency.py
+
+```
